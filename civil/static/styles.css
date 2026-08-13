@@ -1108,7 +1108,7 @@ footer {
 }
 
 .ticket-m-img {
-    background: var url('1.jpg') center/cover no-repeat;
+    background: url('https://github.com/BlixDarkHorse/mya2026.galaxymanager.systems-by-LORD-BDH/blob/main/civil/static/1.jpg?raw=true') center/cover no-repeat;
     position: relative;
     min-height: 100%;
 }
