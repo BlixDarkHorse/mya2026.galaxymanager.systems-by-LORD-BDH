@@ -914,3 +914,180 @@ footer {
     }
 
 }
+
+/* =========================================================
+   BLOQUE 9: Lógica del Sello BDH (Minifooter BDH)
+   ========================================================= */
+/* =========================================================
+   FIRMA INFERIOR · BDH MICRO FOOTER
+   PEGADA AL PIE DE LA INTERFAZ Y A LA IZQUIERDA
+   ========================================================= */
+
+.bdh-footer-bottom {
+    width: 100%;
+    margin: 0;
+    padding: 0.45rem 0 0.35rem 0;
+    /* Padding izquierdo en 0 para que pegue al borde */
+    display: flex;
+    justify-content: flex-start;
+    /* Ancla los elementos a la izquierda */
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.58rem;
+    line-height: 1.2;
+    color: rgba(60, 0, 16, 0.55);
+}
+
+/* ---------------------------------------------------------
+   COPYRIGHT
+   --------------------------------------------------------- */
+
+.footer-copy {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    white-space: nowrap;
+}
+
+.footer-copy span {
+    color: rgba(26, 23, 20, 0.75);
+}
+
+/* ---------------------------------------------------------
+   EMOJI BDH
+   --------------------------------------------------------- */
+
+.bdh-emoji-opaco {
+    opacity: 0.42;
+    filter: grayscale(15%);
+}
+
+/* =========================================================
+   FIRMA LORD BDH
+   ========================================================= */
+
+.bdh-signature-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bdh-trigger {
+    cursor: pointer;
+    color: rgba(21, 21, 19, 0.863);
+    transition: color 0.25s ease, text-shadow 0.25s ease;
+    outline: none;
+}
+
+.bdh-trigger:hover {
+    color: rgba(255, 0, 212, 0.82);
+    text-shadow: 0 0 10px rgba(255, 0, 212, 0.35);
+}
+
+/* =========================================================
+   FIRMA / BUBBLE
+   ========================================================= */
+
+.bdh-bubble {
+    position: absolute;
+    bottom: calc(100% + 9px);
+    /* Se ajusta ligeramente el centro para que no se vea desfasado al estar tan a la izquierda */
+    left: 0;
+    transform: translateY(4px) scale(0.96);
+    transform-origin: bottom left;
+
+    opacity: 0;
+    visibility: hidden;
+    width: max-content;
+    max-width: 280px;
+    padding: 0.65rem 0.9rem;
+    border-radius: 12px;
+
+    /* GLASS TRANSPARENTE */
+    background: rgba(29, 28, 28, 0.22);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(16, 15, 16, 0.28);
+    box-shadow:
+        0 8px 30px rgba(30, 29, 29, 0.28),
+        0 0 18px rgba(26, 25, 26, 0.08);
+    color: #4b4546;
+    border: px solid rgba(201, 166, 70, .5);
+    text-align: left;
+    /* Alineado a la izquierda para coherencia */
+    font-family: "Segoe UI", sans-serif;
+    font-size: 0.55rem;
+    line-height: 1.5;
+    white-space: nowrap;
+
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease;
+
+    z-index: 9999;
+    pointer-events: none;
+}
+
+@media (max-width: 650px) {
+    .bdh-bubble {
+        /* 
+         * Incrementa el vector Y de despegue. 
+         * 75px compensa los 12px de separación del top-nav + el volumen de la barra + un margen limpio.
+         */
+        bottom: calc(100% + 75px);
+        
+        /* 
+         * Refuerza la geometría de la animación para que visualmente 
+         * siga brotando desde la esquina inferior izquierda donde reside su firma.
+         */
+        transform-origin: bottom left; 
+    }
+}
+/* ---------------------------------------------------------
+   ACTIVACIÓN NATIVA
+   SIN JAVASCRIPT (Purgado el foco para evitar retención de clic)
+   --------------------------------------------------------- */
+
+.bdh-signature-wrapper:hover .bdh-bubble {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+    .bdh-footer-bottom {
+    padding: 0.45rem 0 0.35rem 0;
+    /* Padding izquierdo en 0 para que pegue al borde */
+    display: flex;
+    justify-content: flex-start;
+    /* Ancla los elementos a la izquierda */
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;    
+}
+    
+/*{
+        width: 100%;
+        margin: 0;
+        align-self: flex-start;
+        /* Mantiene izquierda estricta */
+        /*padding-bottom: 0;
+        margin-bottom: 0;
+       white-space: nowrap;
+    }*/
+
+    .footer-copy {
+        justify-content: flex-start;
+        /* Mantiene izquierda estricta */
+        flex-wrap: wrap;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+}
