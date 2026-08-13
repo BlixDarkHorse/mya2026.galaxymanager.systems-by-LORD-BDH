@@ -1,0 +1,15 @@
+VERSION CIVIL
+Archivos:
+- index.html
+- styles.css
+- app.js
+- invitados-civil.json
+
+Imagenes opcionales en la misma carpeta:
+- civil.jpg = foto o fondo principal de la civil
+- anillos.png = imagen de anillos arriba derecha
+
+Edita invitados-civil.json para administrar invitados:
+{"codigo":"CIV0005","nombre":"Nombre completo o Familia X","pases":3,"mesa":"Zona A"}
+
+La confirmacion se guarda SOLO en localStorage del navegador. Para confirmaciones reales globales necesitas backend despues.

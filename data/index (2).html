@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4a0712" />
+  <meta name="description" content="Invitación de boda de Montserrat y Alan. Octubre 2026." />
+  <meta property="og:title" content="Montserrat & Alan | Nuestra boda" />
+  <meta property="og:description" content="Con gran alegría te invitamos a celebrar nuestra boda." />
+  <meta property="og:type" content="website" />
+  <title>Montserrat & Alan | Invitación de Boda</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Great+Vibes&family=Pinyon+Script&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="top-nav" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#familias">Familias</a>
+    <a href="#programa">Programa</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#buscarInvitado">Mi pase</a>
+  </nav>
+
+  <main class="page-shell">
+    <header class="hero" id="inicio">
+      <article class="invite-card" aria-label="Invitación principal de boda">
+        <div class="rings" aria-label="Espacio para imagen de anillos">
+          <img src="anillos.png" alt="Anillos de boda" onerror="this.style.display='none'; this.parentElement.classList.add('rings-empty');">
+          <span>ANILLOS</span>
+        </div>
+
+        <div class="ornament tl" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><path d="M22 140C70 132 72 84 41 67c47 6 68-23 87-48-6 41 11 67 49 72-41 11-62 36-62 83-22-36-51-44-93-34Z" fill="none" stroke="#c99a42" stroke-width="2"/><path d="M70 132c20-30 47-58 88-82" fill="none" stroke="#5a0f1b" stroke-width="1.4"/></svg>
+        </div>
+        <div class="ornament br" aria-hidden="true">
+          <svg viewBox="0 0 200 200"><path d="M22 140C70 132 72 84 41 67c47 6 68-23 87-48-6 41 11 67 49 72-41 11-62 36-62 83-22-36-51-44-93-34Z" fill="none" stroke="#c99a42" stroke-width="2"/><path d="M70 132c20-30 47-58 88-82" fill="none" stroke="#5a0f1b" stroke-width="1.4"/></svg>
+        </div>
+
+        <div class="photo-stage" role="img" aria-label="Área visual principal para foto de los novios"></div>
+
+        <div class="content">
+          <p class="eyebrow">Nuestra boda</p>
+          <h1 class="script-title">Montserrat <span class="amp">&</span> Alan</h1>
+          <p class="intro">Con gran alegría, te invitamos a celebrar el inicio de nuestra vida juntos.</p>
+
+          <div class="date-pill" aria-label="Fecha principal de la boda">
+            <span>Sábado</span>
+            <span class="day">24</span>
+            <span>Octubre<br>2026</span>
+          </div>
+
+          <div class="detail-grid">
+            <div class="detail-box"><h3>Civil</h3><p>Zoyatepec, Guerrero<br><strong>17 de octubre de 2026</strong></p></div>
+            <div class="detail-box"><h3>Religiosa</h3><p>Iglesia de San Francisco<br><strong>24 de octubre · 4:30 p. m.</strong></p></div>
+            <div class="detail-box full"><h3>Recepción</h3><p>Salón Mariana / Marina<br><strong>24 de octubre · 7:00 p. m.</strong><br>Calle Mariscal Galeana, Col. Galeana, Chilpancingo de los Bravo, Guerrero.</p></div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn gold" href="#buscarInvitado">Localizar mi pase</a>
+            <a class="btn" href="#ubicacion">Ver ubicación</a>
+            <button class="btn ghost" type="button" id="shareBtn">Compartir</button>
+          </div>
+        </div>
+      </article>
+    </header>
+
+    <section class="section" id="familias">
+      <p class="section-sub">Con la bendición de nuestras familias</p>
+      <h2>Nuestras Familias</h2>
+      <div class="family-card">
+        <div class="family-side"><h3>Familia de Montserrat</h3><p>Marisol Mejía Martínez<br>José Manuel Ávila Olivar</p></div>
+        <div class="family-divider" aria-hidden="true"></div>
+        <div class="family-side"><h3>Familia de Alan</h3><p>María Hernández Santos<br><span class="memory">En memoria de Juan Carlos Díaz Tecuapa ✞</span></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="programa">
+      <p class="section-sub">Octubre 2026</p>
+      <h2>Programa</h2>
+      <div class="timeline">
+        <div class="time-card"><div class="time">17 OCT</div><h3>Boda civil</h3><p>Zoyatepec, Guerrero.</p></div>
+        <div class="time-card"><div class="time">4:30 p. m.</div><h3>Ceremonia religiosa</h3><p>Iglesia de San Francisco, Chilpancingo de los Bravo.</p></div>
+        <div class="time-card"><div class="time">7:00 p. m.</div><h3>Recepción</h3><p>Salón Mariana / Marina, Calle Mariscal Galeana, Col. Galeana.</p></div>
+      </div>
+      <div class="countdown" aria-label="Cuenta regresiva">
+        <div class="count-box"><strong id="days">0</strong><span>Días</span></div>
+        <div class="count-box"><strong id="hours">0</strong><span>Horas</span></div>
+        <div class="count-box"><strong id="minutes">0</strong><span>Min</span></div>
+        <div class="count-box"><strong id="seconds">0</strong><span>Seg</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="ubicacion">
+      <p class="section-sub">Mapa y ruta</p>
+      <h2>Ubicación</h2>
+      <div class="tabs">
+        <div class="tab-controls" role="tablist" aria-label="Ubicaciones">
+          <button class="tab-btn active" type="button" data-tab="civil">Civil</button>
+          <button class="tab-btn" type="button" data-tab="ceremonia">Ceremonia</button>
+          <button class="tab-btn" type="button" data-tab="recepcion">Recepción</button>
+        </div>
+        <div class="tab-panel active" id="tab-civil">
+          <div class="map-layout"><div class="venue-info"><h3>Boda civil</h3><p><strong>Fecha:</strong> 17 de octubre de 2026</p><p>Zoyatepec, Guerrero.</p><a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Zoyatepec%2C+Guerrero%2C+Mexico&travelmode=driving&dir_action=navigate">Cómo llegar</a></div><div class="map-box"><iframe loading="lazy" title="Mapa de Zoyatepec Guerrero" src="https://www.google.com/maps?q=Zoyatepec%2C%20Guerrero%2C%20Mexico&output=embed"></iframe></div></div>
+        </div>
+        <div class="tab-panel" id="tab-ceremonia">
+          <div class="map-layout"><div class="venue-info"><h3>Iglesia de San Francisco</h3><p><strong>Fecha:</strong> 24 de octubre de 2026</p><p><strong>Hora:</strong> 4:30 p. m.</p><a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Iglesia+de+San+Francisco%2C+Chilpancingo+de+los+Bravo%2C+Guerrero%2C+Mexico&travelmode=driving&dir_action=navigate">Cómo llegar</a></div><div class="map-box"><iframe loading="lazy" title="Mapa Iglesia de San Francisco" src="https://www.google.com/maps?q=Iglesia%20de%20San%20Francisco%2C%20Chilpancingo%20de%20los%20Bravo%2C%20Guerrero%2C%20Mexico&output=embed"></iframe></div></div>
+        </div>
+        <div class="tab-panel" id="tab-recepcion">
+          <div class="map-layout"><div class="venue-info"><h3>Salón Mariana / Marina</h3><p><strong>Fecha:</strong> 24 de octubre de 2026</p><p><strong>Hora:</strong> 7:00 p. m.</p><p>Calle Mariscal Galeana, Col. Galeana, Chilpancingo de los Bravo, Guerrero.</p><a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Mariscal+Galeana+29%2C+Galeana%2C+39010+Chilpancingo+de+los+Bravo%2C+Guerrero%2C+Mexico&travelmode=driving&dir_action=navigate">Cómo llegar</a></div><div class="map-box"><iframe loading="lazy" title="Mapa del salón" src="https://www.google.com/maps?q=Mariscal%20Galeana%2029%2C%20Galeana%2C%2039010%20Chilpancingo%20de%20los%20Bravo%2C%20Guerrero%2C%20Mexico&output=embed"></iframe></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="buscarInvitado">
+      <p class="section-sub">Entrada personalizada</p>
+      <h2>Localiza tu invitación</h2>
+      <p class="helper">Ingresa tu nombre completo o código de invitación.</p>
+      <form id="formBusqueda" class="search-form" autocomplete="off">
+        <label class="sr-only" for="buscar">Nombre completo o código</label>
+        <input type="text" id="buscar" name="buscar" placeholder="Ejemplo: Familia Ramírez o MXA0001" required minlength="3" maxlength="120" />
+        <button class="btn gold" type="submit">Buscar invitación</button>
+      </form>
+      <div id="mensajeBusqueda" class="form-message" aria-live="polite"></div>
+      <div id="resultado"></div>
+    </section>
+
+    <footer>Montserrat & Alan · Octubre 2026 · Invitación digital</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

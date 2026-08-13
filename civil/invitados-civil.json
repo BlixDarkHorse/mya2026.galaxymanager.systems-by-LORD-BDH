@@ -1,0 +1,6 @@
+[
+  {"codigo":"CIV0001","nombre":"Familia Ramírez","pases":5,"mesa":"Zona A"},
+  {"codigo":"CIV0002","nombre":"Alonso González","pases":2,"mesa":"Zona B"},
+  {"codigo":"CIV0003","nombre":"María Hernández","pases":1,"mesa":"Zona A"},
+  {"codigo":"CIV0004","nombre":"Familia Torres","pases":3,"mesa":"Por asignar"}
+]
