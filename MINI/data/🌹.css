@@ -1,6 +1,3 @@
-/* =========================================================
-   BLOQUE 1: Variables :root y configuraciones del body / sqr
-   ========================================================= */
 :root {
     --white: #fffdf7;
     --paper: #fff8ea;
@@ -15,18 +12,26 @@
     --radius: 28px;
     --max: 1180px;
 
-    /* NODOS DE IMAGEN OPCIONALES */
+    /* NODOS DE IMAGEN OPCIONALES.
+         Cambia estos archivos si quieres usar fotos reales:
+         1.jpg = imagen de novios para cuerpo/hero
+         2.jpg = diseño alternativo o invitación secundaria
+         3.jpg = imagen de novios en medio para pase de 2 personas
+      */
     --img-novios: url('1.jpg');
     --img-m3: url('2.jpg');
     --img-pase: url('3.jpg');
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 sqr {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
+}
+
+sqr {
     margin: 0;
     color: var(--burgundy-ink);
     font-family: 'Cormorant Garamond', serif;
@@ -38,8 +43,12 @@ sqr {
     overflow-x: hidden;
 }
 
-body {
+main {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
 }
 
 body::before,
@@ -71,7 +80,7 @@ body::after {
 
 @keyframes starsDrift {
     to {
-        transform: translate3d(-70px, 80px, 0);
+        transform: translate3d(-70px, 80px, 0)
     }
 }
 
@@ -80,45 +89,29 @@ body::after {
     0%,
     100% {
         opacity: .25;
-        transform: translateX(-4%);
+        transform: translateX(-4%)
     }
 
     50% {
         opacity: .72;
-        transform: translateX(4%);
+        transform: translateX(4%)
     }
 }
 
 a {
-    color: inherit;
+    color: inherit
 }
 
-@media (prefers-reduced-motion:reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: .001ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition: none !important;
-    }
+.page-shell {
+    position: relative;
+    z-index: 1;
 }
 
-@media (max-width:650px) {
-    body {
-        padding-bottom: 0px;
-    }
-}
-
-/* =========================================================
-   BLOQUE 2: Lógica del .top-nav (Navegación)
-   ========================================================= */
 .top-nav {
-    position: sticky;
+    position: fixed;
     top: 14px;
-    align-self: center;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 20;
     width: min(94vw, 920px);
     display: flex;
@@ -146,81 +139,9 @@ a {
 
 .top-nav a:hover {
     background: rgba(247, 221, 154, .17);
-    color: var(--gold-soft);
+    color: var(--gold-soft)
 }
 
-@media (max-width:650px) {
-    .top-nav {
-        position: sticky;
-        top: auto;
-        bottom: 12px;
-        width: min(94vw, 520px);
-        overflow: auto;
-        justify-content: flex-start;
-        scrollbar-width: none;
-        z-index: 100;
-        order: 99;
-    }
-
-    .top-nav::-webkit-scrollbar {
-        display: none;
-    }
-}
-
-/* =========================================================
-   BLOQUE 3: Lógica de <main> (Contenedor maestro)
-   ========================================================= */
-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin: 0;
-}
-
-.section {
-    width: min(100% - 34px, var(--max));
-    margin: 0 auto 34px;
-    padding: clamp(26px, 4vw, 48px);
-    border-radius: var(--radius);
-    background: rgba(255, 253, 247, .95);
-    border: 1px solid rgba(247, 221, 154, .62);
-    box-shadow: 0 18px 50px rgba(0, 0, 0, .22);
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.section h2 {
-    margin: 0 0 18px;
-    text-align: center;
-    color: var(--burgundy);
-    font-family: 'Great Vibes', cursive;
-    font-size: clamp(3rem, 7vw, 5.4rem);
-    line-height: 1;
-    font-weight: 400;
-}
-
-.section-sub {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--gold-deep);
-    font-size: .82rem;
-    margin-top: -8px;
-}
-
-@media (max-width:650px) {
-    .section {
-        width: min(100% - 20px, var(--max));
-        padding: 24px 16px;
-    }
-}
-
-/* =========================================================
-   BLOQUE 4: Lógica de .hero, .invite-card, .photo-stage
-   ========================================================= */
 .hero {
     min-height: 100svh;
     display: grid;
@@ -278,19 +199,19 @@ main {
 .ornament.tl {
     left: -40px;
     top: -45px;
-    transform: rotate(-12deg);
+    transform: rotate(-12deg)
 }
 
 .ornament.br {
     right: -42px;
     bottom: -40px;
-    transform: rotate(168deg);
+    transform: rotate(168deg)
 }
 
 .ornament svg {
     width: 100%;
     height: 100%;
-    overflow: visible;
+    overflow: visible
 }
 
 .photo-stage {
@@ -298,9 +219,13 @@ main {
     border-radius: 24px;
     position: relative;
     overflow: hidden;
-    background-image: var(--img-novios);
-    background-size: cover;
-    background-position: center;
+    background:
+        linear-gradient(180deg, rgba(255, 253, 247, .12), rgba(90, 15, 27, .24)),
+        var(--img-novios),
+        radial-gradient(circle at 50% 18%, #fffdf7 0 12%, transparent 13%),
+        linear-gradient(160deg, #fffdf7 0%, #f2dfb7 50%, #5a0f1b 100%);
+    background-size: cover, cover, auto, cover;
+    background-position: center, center bottom, center, center;
     border: 1px solid rgba(201, 154, 66, .78);
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .36), 0 20px 50px rgba(90, 15, 27, .25);
 }
@@ -459,7 +384,7 @@ main {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 16px 34px rgba(90, 15, 27, .34);
+    box-shadow: 0 16px 34px rgba(90, 15, 27, .34)
 }
 
 .btn.gold {
@@ -474,113 +399,39 @@ main {
     box-shadow: none;
 }
 
-@media (max-width:970px) {
-    .invite-card {
-        grid-template-columns: 1fr;
-    }
-
-    .photo-stage {
-        min-height: 520px;
-        order: 2;
-    }
-
-    .content {
-        order: 1;
-    }
+.section {
+    width: min(100% - 34px, var(--max));
+    margin: 0 auto 34px;
+    padding: clamp(26px, 4vw, 48px);
+    border-radius: var(--radius);
+    background: rgba(255, 253, 247, .95);
+    border: 1px solid rgba(247, 221, 154, .62);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .22);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
-@media (max-width:650px) {
-    .hero {
-        padding: 26px 14px 38px;
-    }
-
-    .invite-card {
-        padding: 14px;
-        border-radius: 22px;
-    }
-
-    .invite-card::before {
-        inset: 8px;
-        border-radius: 17px;
-    }
-
-    .invite-card::after {
-        display: none;
-    }
-
-    .photo-stage {
-        min-height: 380px;
-    }
-
-    .detail-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .date-pill {
-        gap: 10px;
-        padding: 12px 8px;
-        font-size: .78rem;
-    }
-}
-
-/* =========================================================
-   BLOQUE 5: Lógica de la sección #familias y sus divisores
-   ========================================================= */
-.family-card {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    gap: 24px;
-    align-items: center;
-    border: 1px solid rgba(201, 154, 66, .52);
-    border-radius: 24px;
-    padding: 26px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, .65), rgba(255, 248, 234, .82));
-}
-
-.family-side {
+.section h2 {
+    margin: 0 0 18px;
     text-align: center;
+    color: var(--burgundy);
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(3rem, 7vw, 5.4rem);
+    line-height: 1;
+    font-weight: 400;
 }
 
-.family-side h3 {
+.section-sub {
+    text-align: center;
     font-family: 'Cinzel', serif;
-    color: var(--gold-deep);
-    font-size: .92rem;
     letter-spacing: .12em;
     text-transform: uppercase;
+    color: var(--gold-deep);
+    font-size: .82rem;
+    margin-top: -8px;
 }
 
-.family-side p {
-    font-size: 1.32rem;
-    line-height: 1.42;
-}
-
-.family-divider {
-    width: 1px;
-    height: 140px;
-    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
-}
-
-.memory {
-    font-style: italic;
-    color: var(--burgundy);
-}
-
-@media (max-width: 970px) {
-    .family-card {
-        grid-template-columns: 1fr;
-    }
-
-    .family-divider {
-        width: 220px;
-        height: 1px;
-        margin: auto;
-        background: linear-gradient(to right, transparent, var(--gold), transparent);
-    }
-}
-
-/* =========================================================
-   BLOQUE 6: Lógica de #programa, .timeline, .time-card
-   ========================================================= */
 .timeline {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -618,53 +469,6 @@ main {
     line-height: 1.26;
 }
 
-.countdown {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin: 24px auto 0;
-    max-width: 760px;
-}
-
-.count-box {
-    border-radius: 18px;
-    padding: 16px 10px;
-    background: linear-gradient(180deg, #fffef8, #f4e2ba);
-    border: 1px solid rgba(201, 154, 66, .6);
-    text-align: center;
-}
-
-.count-box strong {
-    display: block;
-    font-family: 'Cinzel', serif;
-    font-size: clamp(1.8rem, 5vw, 3.1rem);
-    color: var(--burgundy);
-    line-height: 1;
-}
-
-.count-box span {
-    font-family: 'Cinzel', serif;
-    font-size: .7rem;
-    letter-spacing: .12em;
-    color: var(--gold-deep);
-    text-transform: uppercase;
-}
-
-@media (max-width:970px) {
-    .timeline {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width:650px) {
-    .countdown {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* =========================================================
-   BLOQUE 7: Lógica de #ubicacion, .tabs, .pass-ticket, etc.
-   ========================================================= */
 .tabs {
     margin-top: 28px;
 }
@@ -709,12 +513,12 @@ main {
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(9px);
+        transform: translateY(9px)
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
@@ -777,9 +581,12 @@ main {
     border-radius: 28px;
     padding: 28px;
     overflow: hidden;
-    background-image: var(--img-pase);
-    background-size: cover;
-    background-position: center;
+    background:
+        linear-gradient(90deg, rgba(255, 253, 247, .92) 0 58%, rgba(90, 15, 27, .78) 58% 100%),
+        var(--img-pase),
+        linear-gradient(135deg, #fffdf7, #eed59b);
+    background-size: cover, cover, cover;
+    background-position: center, center, center;
     border: 1px solid rgba(201, 154, 66, .8);
     box-shadow: 0 22px 40px rgba(90, 15, 27, .16);
 }
@@ -797,11 +604,11 @@ main {
 }
 
 .pass-ticket::before {
-    left: -22px;
+    left: -22px
 }
 
 .pass-ticket::after {
-    right: -22px;
+    right: -22px
 }
 
 .pass-copy {
@@ -847,7 +654,7 @@ main {
     font-family: 'Pinyon Script', cursive;
     font-size: 2.2rem;
     border: 2px solid rgba(247, 221, 154, .75);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, .3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .3)
 }
 
 .alt-card {
@@ -858,7 +665,11 @@ main {
     text-align: center;
     padding: 32px;
     color: var(--white);
-    background-image: var(--img-m3);
+    background:
+        linear-gradient(135deg, rgba(43, 2, 10, .72), rgba(90, 15, 27, .38)),
+        var(--img-m3),
+        radial-gradient(circle at 20% 20%, rgba(247, 221, 154, .54), transparent 30%),
+        linear-gradient(135deg, #3b0710, #985f2c);
     background-size: cover;
     background-position: center;
     border: 1px solid rgba(247, 221, 154, .66);
@@ -871,7 +682,7 @@ main {
     font-size: clamp(4rem, 9vw, 7rem);
     font-weight: 400;
     margin: 0;
-    text-shadow: 0 8px 28px rgba(0, 0, 0, .4);
+    text-shadow: 0 8px 28px rgba(0, 0, 0, .4)
 }
 
 .alt-card p {
@@ -955,6 +766,239 @@ input[type="text"] {
     margin: 10px 0 0;
 }
 
+.countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 24px auto 0;
+    max-width: 760px;
+}
+
+.count-box {
+    border-radius: 18px;
+    padding: 16px 10px;
+    background: linear-gradient(180deg, #fffef8, #f4e2ba);
+    border: 1px solid rgba(201, 154, 66, .6);
+    text-align: center;
+}
+
+.count-box strong {
+    display: block;
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.8rem, 5vw, 3.1rem);
+    color: var(--burgundy);
+    line-height: 1;
+}
+
+.count-box span {
+    font-family: 'Cinzel', serif;
+    font-size: .7rem;
+    letter-spacing: .12em;
+    color: var(--gold-deep);
+    text-transform: uppercase;
+}
+
+footer {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0.2rem;
+    color: var(--white);
+    text-align: center;
+    padding: 24px 18px 46px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: .08em;
+    font-size: .75rem;
+    opacity: .86;
+}
+
+.floating-petal {
+    position: fixed;
+    top: -20px;
+    width: 10px;
+    height: 16px;
+    border-radius: 80% 20% 80% 20%;
+    background: linear-gradient(135deg, #7d1c2a, #f7dd9a);
+    opacity: .68;
+    z-index: 0;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translate3d(var(--x), 105vh, 0) rotate(520deg);
+        opacity: 0
+    }
+}
+
+@media (max-width:970px) {
+
+    .invite-card,
+    .map-layout,
+    .pass-wrap,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-stage {
+        min-height: 520px;
+        order: 2;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .pass-copy {
+        max-width: 66%;
+    }
+}
+
+@media (max-width:650px) {
+    .top-nav {
+        bottom: 12px;
+        top: auto;
+        width: min(94vw, 520px);
+        overflow: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+
+    .top-nav::-webkit-scrollbar {
+        display: none
+    }
+
+    .hero {
+        padding: 26px 14px 38px;
+    }
+
+    .invite-card {
+        padding: 14px;
+        border-radius: 22px;
+    }
+
+    .invite-card::before {
+        inset: 8px;
+        border-radius: 17px
+    }
+
+    .invite-card::after {
+        display: none
+    }
+
+    .photo-stage {
+        min-height: 380px;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .date-pill {
+        gap: 10px;
+        padding: 12px 8px;
+        font-size: .78rem;
+    }
+
+    .section {
+        width: min(100% - 20px, var(--max));
+        padding: 24px 16px;
+    }
+
+    .map-box,
+    .map-box iframe {
+        min-height: 285px;
+    }
+
+    .pass-ticket {
+        min-height: 360px;
+        padding: 22px;
+        background: linear-gradient(180deg, rgba(255, 253, 247, .94) 0 64%, rgba(90, 15, 27, .82) 64% 100%), var(--img-pase), linear-gradient(135deg, #fffdf7, #eed59b);
+        background-size: cover;
+    }
+
+    .pass-copy {
+        max-width: 100%;
+    }
+
+    .pass-seal {
+        right: 24px;
+        bottom: 22px;
+        width: 86px;
+        height: 86px;
+        font-size: 1.8rem;
+    }
+
+    .phone-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (prefers-reduced-motion:reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
+
+/* =========================================================
+       SECCIÓN: NUESTRAS FAMILIAS (#familias)
+    ========================================================= */
+.family-card {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 24px;
+    align-items: center;
+    border: 1px solid rgba(201, 154, 66, .52);
+    border-radius: 24px;
+    padding: 26px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .65), rgba(255, 248, 234, .82));
+}
+
+.family-side {
+    text-align: center;
+}
+
+.family-side h3 {
+    font-family: Cinzel, serif;
+    color: var(--gold-deep);
+    font-size: .92rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.family-side p {
+    font-size: 1.32rem;
+    line-height: 1.42;
+}
+
+.family-divider {
+    width: 1px;
+    height: 140px;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+}
+
+.memory {
+    font-style: italic;
+    color: var(--burgundy);
+}
+
+/* =========================================================
+       SECCIÓN: LOCALIZA TU INVITACIÓN (#buscarInvitado)
+    ========================================================= */
 .helper {
     max-width: 620px;
     margin: 22px auto;
@@ -982,6 +1026,30 @@ input[type="text"] {
     outline: none;
 }
 
+.btn {
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    min-height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 19px;
+    border-radius: 999px;
+    font-family: Cinzel, serif;
+    letter-spacing: .06em;
+    font-size: .82rem;
+    font-weight: 700;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--burgundy), #7e1a2b);
+    box-shadow: 0 12px 28px rgba(90, 15, 27, .28);
+}
+
+.btn.gold {
+    background: linear-gradient(135deg, #a8792f, #e2bd68);
+    color: #35040b;
+}
+
 .form-message {
     text-align: center;
     margin: 16px auto;
@@ -1004,45 +1072,26 @@ input[type="text"] {
     clip: rect(0, 0, 0, 0);
 }
 
-@media (max-width:970px) {
-
-    .map-layout,
-    .pass-wrap,
-    .contact-grid {
+/* =========================================================
+        MEDIA QUERIES (ADAPTACIÓN RESPONSIVA)
+    ========================================================= */
+@media (max-width: 970px) {
+    .family-card {
         grid-template-columns: 1fr;
     }
 
-    .pass-copy {
-        max-width: 66%;
+    .family-divider {
+        width: 220px;
+        height: 1px;
+        margin: auto;
+        background: linear-gradient(to right, transparent, var(--gold), transparent);
     }
 }
 
-@media (max-width:650px) {
-
-    .map-box,
-    .map-box iframe {
-        min-height: 285px;
-    }
-
-    .pass-ticket {
-        min-height: 360px;
-        padding: 22px;
-    }
-
-    .pass-copy {
-        max-width: 100%;
-    }
-
-    .pass-seal {
-        right: 24px;
-        bottom: 22px;
-        width: 86px;
-        height: 86px;
-        font-size: 1.8rem;
-    }
-
-    .phone-actions {
-        grid-template-columns: 1fr;
+@media (max-width: 650px) {
+    .section {
+        width: min(100% - 20px, var(--max));
+        padding: 24px 16px;
     }
 
     .search-form {
@@ -1056,183 +1105,91 @@ input[type="text"] {
 }
 
 /* =========================================================
-   BLOQUE 8: Lógica del footer estándar del main
-   ========================================================= */
-footer {
-    margin: 0 auto;
-    width: min(100% - 34px, var(--max));
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    letter-spacing: .08em;
-    font-size: .75rem;
-    opacity: .96;
-}
-
-@media (max-width: 650px) {
-    footer {
-        padding-bottom: 40px; 
-    }
-}
-.floating-petal {
-    position: fixed;
-    top: -20px;
-    width: 10px;
-    height: 16px;
-    border-radius: 80% 20% 80% 20%;
-    background: linear-gradient(135deg, #7d1c2a, #f7dd9a);
-    opacity: .68;
-    z-index: 0;
-    pointer-events: none;
-    animation: fall linear forwards;
-}
-
-@keyframes fall {
-    to {
-        transform: translate3d(var(--x), 105vh, 0) rotate(520deg);
-        opacity: 0;
-    }
-}
-
-/* =========================================================
-   BLOQUE 9: Lógica del Sello BDH (Minifooter BDH)
+   PARTE INFERIOR MINIFOOTER BDH
    ========================================================= */
 /* =========================================================
-   FIRMA INFERIOR · BDH MICRO FOOTER
-   PEGADA AL PIE DE LA INTERFAZ Y A LA IZQUIERDA
+   DIVISOR
    ========================================================= */
 
-.bdh-footer-bottom {
-    width: 100%;
+.footer-divider {
+    align-self: flex-start;
     margin: 0;
-    padding: 0.45rem 0 0.35rem 0;
-    /* Padding izquierdo en 0 para que pegue al borde */
-    display: flex;
-    justify-content: flex-start;
-    /* Ancla los elementos a la izquierda */
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-family: "Segoe UI", sans-serif;
-    font-size: 0.58rem;
-    line-height: 1.2;
-    color: rgba(60, 0, 16, 0.55);
+    padding: 0.2rem;
+    width: min(1050px, 90%);
+    height: 1px;
+    margin: 0 auto 0;
 }
-
-/* ---------------------------------------------------------
-   COPYRIGHT
-   --------------------------------------------------------- */
 
 .footer-copy {
     display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 0.35rem;
-    white-space: nowrap;
 }
 
 .footer-copy span {
-    color: rgba(26, 23, 20, 0.75);
+    color: rgba(31, 31, 31, 0.55);
 }
 
-/* ---------------------------------------------------------
-   EMOJI BDH
-   --------------------------------------------------------- */
-
-.bdh-emoji-opaco {
-    opacity: 0.42;
-    filter: grayscale(15%);
+.footer-motto {
+    font-family: "Old English Text MT", "UnifrakturCook", serif;
+    font-size: 0.68rem;
+    color: rgba(238, 236, 238, 0.68);
+    text-shadow: 0 0 10px rgba(238, 216, 234, 0.18);
 }
 
 /* =========================================================
-   FIRMA LORD BDH
+   ANCLA Y MOTOR CSS DE LA FIRMA BDH
    ========================================================= */
 
 .bdh-signature-wrapper {
     position: relative;
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
 }
 
 .bdh-trigger {
     cursor: pointer;
-    color: rgba(21, 21, 19, 0.863);
-    transition: color 0.25s ease, text-shadow 0.25s ease;
-    outline: none;
+    transition: .3s;
 }
 
 .bdh-trigger:hover {
-    color: rgba(255, 0, 212, 0.82);
-    text-shadow: 0 0 10px rgba(255, 0, 212, 0.35);
+    color: #3f3f3c;
 }
 
-/* =========================================================
-   FIRMA / BUBBLE
-   ========================================================= */
+.bdh-emoji-opaco {
+    opacity: 0.55;
+}
 
 .bdh-bubble {
     position: absolute;
-    bottom: calc(100% + 9px);
-    /* Se ajusta ligeramente el centro para que no se vea desfasado al estar tan a la izquierda */
-    left: 0;
-    transform: translateY(4px) scale(0.96);
-    transform-origin: bottom left;
-
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
     opacity: 0;
     visibility: hidden;
-    width: max-content;
-    max-width: 280px;
-    padding: 0.65rem 0.9rem;
-    border-radius: 12px;
-
-    /* GLASS TRANSPARENTE */
-    background: rgba(29, 28, 28, 0.22);
+    padding: 12px 18px;
+    border-radius: 18px;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(16, 15, 16, 0.28);
-    box-shadow:
-        0 8px 30px rgba(30, 29, 29, 0.28),
-        0 0 18px rgba(26, 25, 26, 0.08);
-    color: #4b4546;
-    border: px solid rgba(201, 166, 70, .5);
-    text-align: left;
-    /* Alineado a la izquierda para coherencia */
-    font-family: "Segoe UI", sans-serif;
-    font-size: 0.55rem;
-    line-height: 1.5;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .12);
+    color: rgba(88, 86, 86);
+    text-align: center;
+    font-size: .5rem;
     white-space: nowrap;
-
-    transition:
-        opacity 0.25s ease,
-        visibility 0.25s ease,
-        transform 0.25s ease;
-
+    transition: 0.3s ease;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .15);
     z-index: 9999;
     pointer-events: none;
 }
 
-@media (max-width: 650px) {
-    .bdh-bubble {
-        /* 
-         * Incrementa el vector Y de despegue. 
-         * 75px compensa los 12px de separación del top-nav + el volumen de la barra + un margen limpio.
-         */
-        bottom: calc(100% + 75px);
-        
-        /* 
-         * Refuerza la geometría de la animación para que visualmente 
-         * siga brotando desde la esquina inferior izquierda donde reside su firma.
-         */
-        transform-origin: bottom left; 
-    }
-}
-/* ---------------------------------------------------------
-   ACTIVACIÓN NATIVA
-   SIN JAVASCRIPT (Purgado el foco para evitar retención de clic)
-   --------------------------------------------------------- */
-
-.bdh-signature-wrapper:hover .bdh-bubble {
+/* Detonadores nativos del DOM (Reemplazo absoluto del JS) */
+.bdh-signature-wrapper:hover .bdh-bubble,
+.bdh-signature-wrapper:focus .bdh-bubble,
+.bdh-signature-wrapper:focus-within .bdh-bubble {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0) scale(1);
+    transform: translateX(-50%) scale(1);
 }
 
 /* =========================================================
@@ -1240,32 +1197,27 @@ footer {
    ========================================================= */
 
 @media (max-width: 700px) {
-    .bdh-footer-bottom {
-    padding: 0.45rem 0 0.35rem 0;
-    /* Padding izquierdo en 0 para que pegue al borde */
-    display: flex;
-    justify-content: flex-start;
-    /* Ancla los elementos a la izquierda */
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;    
-}
-    
-/*{
-        width: 100%;
-        margin: 0;
-        align-self: flex-start;
-        /* Mantiene izquierda estricta */
-        /*padding-bottom: 0;
-        margin-bottom: 0;
-       white-space: nowrap;
-    }*/
+    .bdh-footer-inner {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        text-align: center;
+    }
 
-    .footer-copy {
-        justify-content: flex-start;
-        /* Mantiene izquierda estricta */
-        flex-wrap: wrap;
-        white-space: nowrap;
-        margin-bottom: 0;
+    .footer-brand {
+        align-items: center;
+    }
+
+    .footer-grid {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-column {
+        align-items: center;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        text-align: center;
     }
 }

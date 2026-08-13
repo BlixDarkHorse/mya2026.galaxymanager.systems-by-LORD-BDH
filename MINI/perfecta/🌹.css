@@ -107,7 +107,7 @@ a {
 
 @media (max-width:650px) {
     body {
-        padding-bottom: 0px;
+        padding-bottom: 50px;
     }
 }
 
@@ -1065,14 +1065,9 @@ footer {
     font-family: 'Cinzel', serif;
     letter-spacing: .08em;
     font-size: .75rem;
-    opacity: .96;
+    opacity: .86;
 }
 
-@media (max-width: 650px) {
-    footer {
-        padding-bottom: 40px; 
-    }
-}
 .floating-petal {
     position: fixed;
     top: -20px;
@@ -1209,21 +1204,6 @@ footer {
     pointer-events: none;
 }
 
-@media (max-width: 650px) {
-    .bdh-bubble {
-        /* 
-         * Incrementa el vector Y de despegue. 
-         * 75px compensa los 12px de separación del top-nav + el volumen de la barra + un margen limpio.
-         */
-        bottom: calc(100% + 75px);
-        
-        /* 
-         * Refuerza la geometría de la animación para que visualmente 
-         * siga brotando desde la esquina inferior izquierda donde reside su firma.
-         */
-        transform-origin: bottom left; 
-    }
-}
 /* ---------------------------------------------------------
    ACTIVACIÓN NATIVA
    SIN JAVASCRIPT (Purgado el foco para evitar retención de clic)
@@ -1241,31 +1221,15 @@ footer {
 
 @media (max-width: 700px) {
     .bdh-footer-bottom {
-    padding: 0.45rem 0 0.35rem 0;
-    /* Padding izquierdo en 0 para que pegue al borde */
-    display: flex;
-    justify-content: flex-start;
-    /* Ancla los elementos a la izquierda */
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;    
-}
-    
-/*{
-        width: 100%;
-        margin: 0;
-        align-self: flex-start;
+        justify-content: flex-start;
         /* Mantiene izquierda estricta */
-        /*padding-bottom: 0;
-        margin-bottom: 0;
-       white-space: nowrap;
-    }*/
+        padding-bottom: 0.5rem;
+    }
 
     .footer-copy {
         justify-content: flex-start;
         /* Mantiene izquierda estricta */
         flex-wrap: wrap;
-        white-space: nowrap;
-        margin-bottom: 0;
+        white-space: normal;
     }
 }
