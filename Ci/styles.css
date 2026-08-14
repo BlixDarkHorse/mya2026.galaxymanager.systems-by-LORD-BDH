@@ -1108,7 +1108,7 @@ footer {
 }
 
 .ticket-m-img {
-    background: url('https://github.com/BlixDarkHorse/mya2026.galaxymanager.systems-by-LORD-BDH/blob/main/civil/static/1.jpg?raw=true') center/cover no-repeat;
+    background: url('https://github.com/BlixDarkHorse/mya2026.galaxymanager.systems-by-LORD-BDH/blob/main/data/IMPRESO/1.jpg?raw=true') center/cover no-repeat;
     position: relative;
     min-height: 100%;
 }
@@ -1237,4 +1237,31 @@ footer {
     .btn-print-row, .bdh-footer-bottom {
         display: none !important;
     }
+}
+
+/* =========================================================
+   ENCABEZADO SUPERPUESTO (LORD BDH OVERLAY)
+   ========================================================= */
+/* =========================================================
+   ENCABEZADO SUPERPUESTO (LORD BDH OVERLAY)
+   ========================================================= */
+.bdh-header-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    
+    /* Altura dinámica: 250px en celular, escala suave, tope de 450px en PC */
+    height: clamp(250px, 35vw, 450px); 
+    
+    /* Anclaje: top center asegura que las flores de arriba NUNCA se corten */
+    background: url('https://github.com/BlixDarkHorse/mya2026.galaxymanager.systems-by-LORD-BDH/blob/main/8.png?raw=true') top center / cover no-repeat;
+    
+    /* HUNDIMIENTO FÁCTICO: Se va al fondo. La tarjeta y las letras quedan arriba */
+    z-index: 89; 
+    pointer-events: none; 
+    
+    /* El difuminado inferior para que se funda con tu color de fondo */
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }

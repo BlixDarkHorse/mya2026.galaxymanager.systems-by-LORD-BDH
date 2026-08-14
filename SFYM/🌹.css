@@ -119,7 +119,7 @@ a {
     top: 14px;
     align-self: center;
     margin: 0 auto;
-    z-index: 20;
+    z-index: 99; /* SUBIMOS A 99 PARA QUE SOBREVIVA AL OVERLAY DE 89 */
     width: min(94vw, 920px);
     display: flex;
     justify-content: center;
@@ -1286,7 +1286,7 @@ footer {
 }
 
 .ticket-m-img {
-    background: url('https://github.com/BlixDarkHorse/mya2026.galaxymanager.systems-by-LORD-BDH/blob/main/civil/static/1.jpg?raw=true') center/cover no-repeat;
+    background: url('https://github.com/BlixDarkHorse/mya2026.galaxymanager.systems-by-LORD-BDH/blob/main/data/IMPRESO/1.jpg?raw=true') center/cover no-repeat;
     position: relative;
     min-height: 100%;
 }
@@ -1415,4 +1415,34 @@ footer {
     .btn-print-row, .bdh-footer-bottom {
         display: none !important;
     }
+}
+
+
+/* =========================================================
+   ENCABEZADO SUPERPUESTO (LORD BDH OVERLAY)
+   ========================================================= */
+/* =========================================================
+   ENCABEZADO SUPERPUESTO (LORD BDH OVERLAY - VERSIÓN BANNER ESTIRADO)
+   ========================================================= */
+.bdh-header-overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    
+    /* 1. HACE LA CAJA MÁS CHICA (Menos invasiva hacia abajo) */
+    height: 220px; 
+    
+    /* 2. ALARGA Y HACE MÁS CHICA LA IMAGEN (Fuerza bruta de estiramiento)
+       Al usar '100% 100%', la imagen se estira a lo ancho de la pantalla 
+       y se comprime en los 220px de alto, haciendo que las flores se vean pequeñas. */
+    background: url('11.jpeg') top center / 100% 100% no-repeat;
+    
+    /* HUNDIMIENTO FÁCTICO DE PROFUNDIDAD */
+    z-index: 89; 
+    pointer-events: none; 
+    
+    /* Degradado suavizado para la nueva altura corta */
+    -webkit-mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 30%, transparent 100%);
 }
