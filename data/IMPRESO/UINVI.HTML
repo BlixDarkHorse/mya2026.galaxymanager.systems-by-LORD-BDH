@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Civil - M&A</title>
+    <style>
+        /* Reseteo y fondo oscuro para resaltar la invitación */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Contenedor principal anclado */
+        .invitation-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Ancho máximo para no deformar en PC */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            display: block;
+        }
+
+        /* Imagen de invitación actuando como fondo responsivo */
+        .bg-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Contenedor del QR superpuesto al fondo */
+        .qr-wrapper {
+            position: absolute;
+            bottom: 40px; /* Distancia desde el borde inferior */
+            left: 50%;
+            transform: translateX(-50%); /* Centrado matemático estricto */
+            width: 110px; /* Tamaño del QR */
+            height: 110px;
+            padding: 8px;
+            background: #fffdf7; /* Fondo claro para legibilidad del QR */
+            border: 2px solid #c99a42; /* Borde dorado BDH */
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(90, 15, 27, 0.4);
+        }
+
+        /* Imagen del QR */
+        .qr-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        /* Adaptación para pantallas muy pequeñas */
+        @media (max-width: 480px) {
+            .qr-wrapper {
+                bottom: 25px;
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invitation-wrapper">
+        <!-- BASE: IMAGEN DE INVITACIÓN -->
+        <img src="INVI CIVIL.jpeg" alt="Invitación Civil" class="bg-image">
+        
+        <!-- SUPERPOSICIÓN: CÓDIGO QR -->
+        <div class="qr-wrapper">
+            <img src="qrcode_mya2026.galaxymanager.systems.png" alt="Código QR" class="qr-image">
+        </div>
+    </div>
+
+</body>
+</html>

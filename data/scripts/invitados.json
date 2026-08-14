@@ -1,0 +1,6 @@
+[
+  {"codigo":"MXA0001","nombre":"Familia Ramírez","pases":5,"mesa":12},
+  {"codigo":"MXA0002","nombre":"Alonso González","pases":2,"mesa":4},
+  {"codigo":"MXA0003","nombre":"María Hernández","pases":1,"mesa":8},
+  {"codigo":"MXA0004","nombre":"Familia Torres","pases":3,"mesa":"Por asignar"}
+]
