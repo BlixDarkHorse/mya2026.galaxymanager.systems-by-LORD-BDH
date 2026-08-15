@@ -39,7 +39,7 @@ function initPetals() {
     if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     setInterval(() => {
         const p = document.createElement("span");
-        p.className = "floating-petal";
+        p.className = "floating-petal"; p.style.zIndex = "9999";
         p.style.left = `${Math.random() * 100}vw`;
         p.style.setProperty("--x", `${Math.random() * 160 - 80}px`);
         p.style.animationDuration = `${7 + Math.random() * 6}s`;

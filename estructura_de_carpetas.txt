@@ -1,0 +1,725 @@
+🌐 ESTRUCTURA DE DIRECTORIOS - UNIVERSO BDH
+🖤🔥🚀
+
+➡️ 📁 .git/
+➡️     ↳ 📄 COMMIT_EDITMSG
+➡️     ↳ 📄 FETCH_HEAD
+➡️     ↳ 📄 HEAD
+➡️     ↳ 📄 ORIG_HEAD
+➡️     ↳ 📄 config
+➡️     ↳ 📄 description
+➡️     📁 gk/
+➡️         ↳ 📄 config
+➡️     📁 hooks/
+➡️         ↳ 📄 applypatch-msg.sample
+➡️         ↳ 📄 commit-msg.sample
+➡️         ↳ 📄 fsmonitor-watchman.sample
+➡️         ↳ 📄 post-update.sample
+➡️         ↳ 📄 pre-applypatch.sample
+➡️         ↳ 📄 pre-commit.sample
+➡️         ↳ 📄 pre-merge-commit.sample
+➡️         ↳ 📄 pre-push.sample
+➡️         ↳ 📄 pre-rebase.sample
+➡️         ↳ 📄 pre-receive.sample
+➡️         ↳ 📄 prepare-commit-msg.sample
+➡️         ↳ 📄 push-to-checkout.sample
+➡️         ↳ 📄 sendemail-validate.sample
+➡️         ↳ 📄 update.sample
+➡️     ↳ 📄 index
+➡️     📁 info/
+➡️         ↳ 📄 exclude
+➡️     📁 logs/
+➡️         ↳ 📄 HEAD
+➡️         📁 refs/
+➡️             📁 heads/
+➡️                 ↳ 📄 main
+➡️             📁 remotes/
+➡️                 📁 origin/
+➡️                     ↳ 📄 HEAD
+➡️                     ↳ 📄 main
+➡️     📁 objects/
+➡️         📁 00/
+➡️             ↳ 📄 08e711faf123b1eb8596a0c8089a80f10ea018
+➡️             ↳ 📄 b00c2e04c3903fb15b9653fd329893cec70819
+➡️         📁 01/
+➡️             ↳ 📄 3595fc8c282b5c36595a5a6022d9d45dc83595
+➡️         📁 02/
+➡️             ↳ 📄 246524b6904ef2d859667b73cb08e44e1067fe
+➡️             ↳ 📄 37934f750889f39362c3051122e1ffbcb80614
+➡️             ↳ 📄 965a0570e9fde3b089cab07194cdc269d273fa
+➡️         📁 03/
+➡️             ↳ 📄 b644b82643457011a2ed8560fa4e38a10bd845
+➡️         📁 08/
+➡️             ↳ 📄 778d7a80e7c72dfd6972c00423c4f6d3d78072
+➡️         📁 09/
+➡️             ↳ 📄 304eb4d3ac4db6b262254b13ad9bb7952469a4
+➡️             ↳ 📄 fbec44486c47d8c4eb5d76f30b384a4f55311f
+➡️         📁 0b/
+➡️             ↳ 📄 177e0daaeed20db0d4860205a5a17a526f5cf9
+➡️         📁 0d/
+➡️             ↳ 📄 b345d2ef8b457c16670a064295af044f4b2d83
+➡️             ↳ 📄 ffff79d4fa7a01a9548623a8b82a1628c15094
+➡️         📁 0e/
+➡️             ↳ 📄 5ca012ccc9c39f91fd564bfc3ac7f554d02065
+➡️         📁 0f/
+➡️             ↳ 📄 01dc20b226aa581c362890340445f1398e9045
+➡️         📁 10/
+➡️             ↳ 📄 4306d5c622b76f314b45d577fd51d60302bb43
+➡️             ↳ 📄 feea90e10f1a3947230de5b9db4c76ac5b177e
+➡️         📁 15/
+➡️             ↳ 📄 28ebc8626a9300462d467ec357eec2040742e9
+➡️             ↳ 📄 8e763611b55afb52762977981d5619dfdacd06
+➡️         📁 17/
+➡️             ↳ 📄 9050e00c0a1beaf72f5ea03b83b7acae4ee572
+➡️         📁 19/
+➡️             ↳ 📄 b820c1bad1deda687663bc804216c604e09d44
+➡️             ↳ 📄 db28f157a1c12fcf5b41623d01a611ca426c8a
+➡️         📁 1a/
+➡️             ↳ 📄 04b21f4555362d70552a03952acec8db6a645f
+➡️         📁 1b/
+➡️             ↳ 📄 198071b5df17116908de73ec1a148b8756eecb
+➡️         📁 1d/
+➡️             ↳ 📄 9b9bcf50d71f09fc847a593e5a5c7002bd9d0a
+➡️             ↳ 📄 c0db5eb2c1cc6da5a80d0b6061a7853b130621
+➡️         📁 1e/
+➡️             ↳ 📄 905dd23e81a90ced0e1b168dfce20ba74894b5
+➡️         📁 1f/
+➡️             ↳ 📄 34868829202581c915b9e1c356a4d682300659
+➡️             ↳ 📄 67f901e8c5f6bcc954b7dea3abeb9cd1436277
+➡️             ↳ 📄 6cff4fbbd9a68679a5c640820ef88331a50bd1
+➡️             ↳ 📄 a728260a69bfcbb9ca503281bc97654437b7a1
+➡️         📁 21/
+➡️             ↳ 📄 108f832762903a4b6f7dc2bdfc29ae80c0957a
+➡️         📁 23/
+➡️             ↳ 📄 73a4cc58954d0478f6aaf7f9bc4fee65bec3cf
+➡️             ↳ 📄 cd42ffc28e4ce95f99ff4c1c35879b3f9972f9
+➡️         📁 24/
+➡️             ↳ 📄 44978f534a4c2271df5484d0051e95601f2b9d
+➡️             ↳ 📄 5c1e4b1059eab7090f16a45654070040e0ceb5
+➡️             ↳ 📄 abb25d0bba76f012815ee3c0358b723bcf8c31
+➡️         📁 26/
+➡️             ↳ 📄 a72ba80329873d115ef0e74e20a64ed54064f3
+➡️             ↳ 📄 bb226c269c7e33953fce923c298cc61cf03c9c
+➡️         📁 28/
+➡️             ↳ 📄 5aa014c983fed9b64b78e2c6a52e5d2f3a8e27
+➡️         📁 2b/
+➡️             ↳ 📄 0b338729a2eb71b57b891d4437333b9f7bbde6
+➡️             ↳ 📄 55398b1375d2a51ce2f69289f0b0ab0fcfe258
+➡️             ↳ 📄 83eb61a15da292112d4ded3615ebed8bc4a542
+➡️         📁 2c/
+➡️             ↳ 📄 adfa94ce1304600ec32a7e12a2d55b71ce0253
+➡️         📁 2d/
+➡️             ↳ 📄 59179d56c0bb4f5c0260f2ff88dffab542f0ec
+➡️             ↳ 📄 b4f18daf93c79b132bf7ef2076212423fa3911
+➡️         📁 2e/
+➡️             ↳ 📄 71747c50d9e5fe31e24c502fddac50f7e467d5
+➡️         📁 30/
+➡️             ↳ 📄 3670d15d25aaba2720e9a7d6ef817587228ed7
+➡️         📁 33/
+➡️             ↳ 📄 01ca4c4f37fbea5a09cd3b73b71242a17a5e36
+➡️             ↳ 📄 3016fa004bd9a27c808d626359cc101b5f73da
+➡️             ↳ 📄 7b6d436865e9cc9edcee62ccae2d21a01a8f80
+➡️             ↳ 📄 ba757d337e4473daeefd6cd58d706c03228ee4
+➡️         📁 35/
+➡️             ↳ 📄 5c772104f552b53af001ae2870009c2ba4d5af
+➡️         📁 36/
+➡️             ↳ 📄 15bca4b069d31b3e58eb8ac511c0137bb28edf
+➡️             ↳ 📄 cb972b3fc4a3603d4f24f3ebf184b4bf57a36f
+➡️         📁 37/
+➡️             ↳ 📄 ef8aebd366f8ea757b54e6e5cc4cbbe4a7ea92
+➡️         📁 38/
+➡️             ↳ 📄 106996b1cfcf1f543ea1c964885cdd126d2465
+➡️             ↳ 📄 5daa69d10b2cf37dfdb5ab3f66a518d0c0f1ca
+➡️         📁 39/
+➡️             ↳ 📄 5b84b3a81962ed186975806648b0ac743f1186
+➡️         📁 3b/
+➡️             ↳ 📄 2b7590a51765fc7aa008e7a15adfd704d92e4b
+➡️         📁 3d/
+➡️             ↳ 📄 591c369718733247cd1e68d686f51ce753821b
+➡️         📁 3e/
+➡️             ↳ 📄 891f4866797f70f1078c10ee8db7ae7f02644b
+➡️             ↳ 📄 c524d645bddf6eb371a32f59fb076ae1a20f74
+➡️         📁 40/
+➡️             ↳ 📄 6abc7dbb2b9d2ad711f7af1fd7024badb05741
+➡️             ↳ 📄 ba64ee52791661ae352bb23fa0956db953a212
+➡️         📁 42/
+➡️             ↳ 📄 cd74452deea4af4b283febc8576b07fad42daf
+➡️         📁 43/
+➡️             ↳ 📄 88f031baac5eeeb15c7ec2c6241ca81e007a38
+➡️         📁 44/
+➡️             ↳ 📄 c909491a3599a5d24082fa78ae9632970e29e3
+➡️         📁 46/
+➡️             ↳ 📄 621a659617122ca9f21dbcad24f261cbfdbaa0
+➡️             ↳ 📄 66f72b94cc4889b9f7d8ec7f6768fe04f85555
+➡️         📁 47/
+➡️             ↳ 📄 c255a510a4712725f0d0085d7a6dc085f338fe
+➡️         📁 48/
+➡️             ↳ 📄 550acfbce3ba757d91a7e27a5471da987f8320
+➡️             ↳ 📄 b4bba52a4c1cf6802c402ea84d4aae4cd42137
+➡️             ↳ 📄 c96b4b6d1ca164b4a2f81f9243aefd49fee500
+➡️         📁 49/
+➡️             ↳ 📄 1e9b4b59c94f1ce74ce7e70da72833954b1b9e
+➡️         📁 4a/
+➡️             ↳ 📄 6b7aaf4516bdb7faa38f76b626db1581203330
+➡️             ↳ 📄 f49b7c42df968447d874caab5938e5c23fc338
+➡️         📁 4c/
+➡️             ↳ 📄 6590585bbed8acb4e49af3eaddb92597510e53
+➡️             ↳ 📄 912798cb365665bc17025aa78d42023904a775
+➡️         📁 4d/
+➡️             ↳ 📄 18738ed0a81e5075bf3f2952d26ca358703659
+➡️             ↳ 📄 433e0d23113fc223833542b5e317f16d34f7a4
+➡️             ↳ 📄 775cd4add37214c0c506e0b45aa8952864eac7
+➡️         📁 50/
+➡️             ↳ 📄 e31571a988b2be58ce86f9ee250303fc353374
+➡️         📁 52/
+➡️             ↳ 📄 20e9abfc93e4557403f630af43058a84a5243a
+➡️             ↳ 📄 763c4b3858f1eb3be934e7b9e7387982ab05ad
+➡️         📁 54/
+➡️             ↳ 📄 24d86a22b33278ab06f407ecdce4b3524dc2b3
+➡️         📁 59/
+➡️             ↳ 📄 0016bdf96d73cf8e5e67b9d7c33665f5e8cd46
+➡️             ↳ 📄 e772889e8dba0185323b13643e41dcfb80b9eb
+➡️         📁 5a/
+➡️             ↳ 📄 292c24936ff5193bda0c0299e1c8105860f0bc
+➡️             ↳ 📄 cdc36cbfc40972bfd5bad55436a5f48eca4982
+➡️         📁 5f/
+➡️             ↳ 📄 206359448b2e7a48b2c1d0d4fe37bd1e4dfc07
+➡️             ↳ 📄 fc9918270f13671c59466f11db1aca7671bcd4
+➡️         📁 60/
+➡️             ↳ 📄 c1564ab941adba48c00a5d1f37c5464818d503
+➡️             ↳ 📄 fdd4b20d57e914254dfec9715b29af0f6a1ce7
+➡️         📁 62/
+➡️             ↳ 📄 363617fcc836049e9b04c3f73950b4d68f4b86
+➡️         📁 63/
+➡️             ↳ 📄 68c17eb3716763d033abddbab22c8057b5a0a9
+➡️             ↳ 📄 9070b73a628fd3d679446a1c7ce8615cc4b13c
+➡️             ↳ 📄 dbf9d36f84c6e8db1eb07f44d82044c2a9c5b2
+➡️         📁 65/
+➡️             ↳ 📄 1d6afac49a556261f25d5adc841fbb2a7527c5
+➡️         📁 66/
+➡️             ↳ 📄 2948e9d9eaf9e15ee6cf7074cc60a50f9987dd
+➡️             ↳ 📄 3ad52451e5dbd060635a1c30b9b267ed8f5e3c
+➡️         📁 67/
+➡️             ↳ 📄 24eb9b09aedf34218dd3fed855add84d014083
+➡️         📁 68/
+➡️             ↳ 📄 ebadab5661a62d912af6de6bf0d3b14a8f862c
+➡️             ↳ 📄 f060deb444a7a89af6a865654731d2bf2c0ce0
+➡️         📁 6a/
+➡️             ↳ 📄 4e3327cff74b521e976dbb0db12c18537597d7
+➡️         📁 6b/
+➡️             ↳ 📄 0edf8f3bb3c8cc9380f3e2a022b31f0dc99c29
+➡️             ↳ 📄 11b2b0073c2cb3c213619a4719eb5703bb5c14
+➡️             ↳ 📄 32066ec034c61df44a0b58de0d0e0d93247ed9
+➡️             ↳ 📄 a5cbab8e1532fd222363406dc6fe83e3817485
+➡️         📁 6c/
+➡️             ↳ 📄 26a944dfc26b543c233fe2190312ef78105f23
+➡️         📁 6e/
+➡️             ↳ 📄 e68e13c5187dc3a87b933a9e5ae71eda3a8453
+➡️         📁 70/
+➡️             ↳ 📄 160512543e92d6128604cfb672eb6697f5a82d
+➡️             ↳ 📄 663a482a3a2718aec42b9f3aa88bde82090dd5
+➡️         📁 71/
+➡️             ↳ 📄 1d0cb50a25ff93f3a1a9bd847aeaa94149460d
+➡️             ↳ 📄 fa198a64a82f9eb33eefe26e8d7f0284fa040b
+➡️         📁 72/
+➡️             ↳ 📄 01fb6f25d68418a4acd5de84496a548fb14e91
+➡️         📁 74/
+➡️             ↳ 📄 8a3dc6e2aa343dbbb9888353179ef3405b06d5
+➡️             ↳ 📄 9257f7539716c6e16cd8c478a3f62a36e830cd
+➡️         📁 75/
+➡️             ↳ 📄 3109c9cdf60aea4be0405e9f30de994214e333
+➡️             ↳ 📄 58d39ebcf15ac243713db027188eee9425db0f
+➡️         📁 76/
+➡️             ↳ 📄 a03b689eed01a4f70058c24b28c6efc69029fc
+➡️         📁 77/
+➡️             ↳ 📄 505e3ea3e6afdb5092ca5ffb4f6be6432f436c
+➡️         📁 7a/
+➡️             ↳ 📄 0cada24bb02cb152c3dcdaa3d40f5571e40bee
+➡️             ↳ 📄 5e0db2d07ad37ed695ee7a8c45b3dae3d88c71
+➡️         📁 7b/
+➡️             ↳ 📄 42f955323489161e445247f7160e8eb5a71abb
+➡️             ↳ 📄 e05f06dd05be215af09d18aea4187610dc4499
+➡️         📁 7c/
+➡️             ↳ 📄 92b5ec2771e1809c789ace350b3f6891ce2fd2
+➡️         📁 7f/
+➡️             ↳ 📄 82d52116d3a7bee1c71fe6c4fdd265372ccf71
+➡️             ↳ 📄 d351e3b043f954fe64e46743cfaf8bf8c93d06
+➡️             ↳ 📄 d8c2a0700ecd053a384e178f656d05e9b33232
+➡️         📁 80/
+➡️             ↳ 📄 0de4d853b2c1c2dc1a18bfd347d3305bf2a673
+➡️             ↳ 📄 3171c2e46521b23fc73fa1e0a2659b2f9c4bd4
+➡️             ↳ 📄 76a61e94ff6514b57ec7f0867d46d2fd956e30
+➡️         📁 81/
+➡️             ↳ 📄 d621a33c20f12328f8f213a679296af4e37b74
+➡️         📁 82/
+➡️             ↳ 📄 2e19222d2c282c13d877572397753498992864
+➡️         📁 85/
+➡️             ↳ 📄 855dc9e0301b1491ee34dca67157998aa4fbbd
+➡️             ↳ 📄 9ea213355ce1413258dc32da95dfe7a8956aba
+➡️             ↳ 📄 bdd981fed4ccd53645a029154568b9f234ede5
+➡️         📁 88/
+➡️             ↳ 📄 359012c5de7c1b646526a19fa16d95fb9aa442
+➡️             ↳ 📄 7a529b91ff8d7318258dbbfa15dbfe96dc5646
+➡️         📁 8b/
+➡️             ↳ 📄 1be6d7a3cdddc9ca7b28ecd305987034892ada
+➡️         📁 8c/
+➡️             ↳ 📄 8c670073525f3ef409a7904a0002f735230a95
+➡️             ↳ 📄 fec76f845a8a24b21ca2633d28a830223dc149
+➡️         📁 8e/
+➡️             ↳ 📄 6b17515ed454e2422a80ac9aedee7901752881
+➡️             ↳ 📄 f61015a20229a9d1f8dc2effb0273e8ff510ba
+➡️         📁 90/
+➡️             ↳ 📄 83ff9696baea5dd20c5daf12026136922304a6
+➡️         📁 91/
+➡️             ↳ 📄 596c3744a2e113abd4359f654b5211545c8ca1
+➡️         📁 94/
+➡️             ↳ 📄 2794e29818d9e2b49ad33fb9a062a8621db0be
+➡️             ↳ 📄 c2096d5a878a94def7636f10620a4579410db8
+➡️         📁 97/
+➡️             ↳ 📄 da2d0869b8b984d7fb9a364cfa2d4b5a3e7467
+➡️         📁 98/
+➡️             ↳ 📄 3f631b2ce4b42ab24507963e703af78cf39af2
+➡️             ↳ 📄 6c8a5f0efe9372d99fd88d62a1e98e6fa9c4e9
+➡️             ↳ 📄 fc53857b3f6b8432752c87ec3e383b68c5bcd5
+➡️         📁 99/
+➡️             ↳ 📄 33b6793a821bf123bb92e0b9601efc075d9265
+➡️         📁 9a/
+➡️             ↳ 📄 04514bba15e7906b73059adc3f51fb4a9b7cca
+➡️             ↳ 📄 0d90e2d519d2503bfd241c807d93afaf91c2c7
+➡️             ↳ 📄 a6cd4eca262bbe6f7475a31866a288e1dde653
+➡️             ↳ 📄 b5d21c5f3baaf1e23a4bd2d9f1d309bca6f826
+➡️         📁 9b/
+➡️             ↳ 📄 b04991de9975e25719cd21981a3be8a5d76c46
+➡️             ↳ 📄 f0e44afdcce93e83a254df445337449afd1e35
+➡️         📁 9c/
+➡️             ↳ 📄 abff6d2c7b2c828c1373a1bc254ef3714b92d3
+➡️         📁 9d/
+➡️             ↳ 📄 0947a84dcf1b40c55f6a235bb45a6ad72bf2cb
+➡️             ↳ 📄 977bc7fcaff473937c377caae76dfdec88fc3d
+➡️         📁 9e/
+➡️             ↳ 📄 08c8d2b5cc2b2a7b3e43e9d92ceec97d638714
+➡️             ↳ 📄 a82a31a0032544229c15d1847cd6c8e6e728af
+➡️         📁 9f/
+➡️             ↳ 📄 b7a33d4daaa240188b43065d7de0c6c37a994d
+➡️             ↳ 📄 d79a45bc998b1a76b933da6d47d21953926c77
+➡️         📁 a0/
+➡️             ↳ 📄 59dd3d13179e545ef895af73b6a0c6530c133f
+➡️         📁 a2/
+➡️             ↳ 📄 ae6edc7a63de8f4fb5918ed00dbc0d929d82e3
+➡️         📁 a3/
+➡️             ↳ 📄 03279f9bc70b38e5f0d7558ed402d4b24d0aa9
+➡️             ↳ 📄 b2f45cd471723dee10580fac37d099567b7082
+➡️         📁 a4/
+➡️             ↳ 📄 cfa4ec88c70537b6e46c5cfea35f5d41f6850e
+➡️         📁 a5/
+➡️             ↳ 📄 d94582cd135d238f6ec027037465b483f55f8a
+➡️         📁 a7/
+➡️             ↳ 📄 21050f1fd401c677f00b4dcad3fab724841880
+➡️         📁 a8/
+➡️             ↳ 📄 2d86f1844145b43b93afb071e67daf0793d0da
+➡️         📁 a9/
+➡️             ↳ 📄 4be598eba7732d17788fb6bd75ef3edbcb51fd
+➡️         📁 aa/
+➡️             ↳ 📄 71b97167fe9110b456b8f5a835f97495b110c3
+➡️         📁 ab/
+➡️             ↳ 📄 e46f87a1e3257570ec66b89ea9503405ae82fb
+➡️             ↳ 📄 efc5515911e353530aac17aeb1af4ee4e4e103
+➡️         📁 ac/
+➡️             ↳ 📄 642a7b9227063119c4a95121ba4fbd5c3930e3
+➡️             ↳ 📄 736a5f30c98815493d62077aac1cb8f0a7b7c5
+➡️             ↳ 📄 ca24129625dac1a5434fac3c69ec9accc6763f
+➡️         📁 ae/
+➡️             ↳ 📄 8d36e17b774bc0cba71f9c969c496b41e98334
+➡️             ↳ 📄 bab02fcec7da5b88535c57bbd7d50a8fc08074
+➡️         📁 b1/
+➡️             ↳ 📄 832b31b965771352ef0cd7ca900bc6992cf904
+➡️         📁 b2/
+➡️             ↳ 📄 5f70f1015ff6c54deb7e36a0de9eaee6135d0a
+➡️             ↳ 📄 66969b8bc6acddf85ee4fc8ca050a36173e82d
+➡️         📁 b4/
+➡️             ↳ 📄 74124e0f978df3e9309f8d8a5daf88f05e3f35
+➡️             ↳ 📄 bef3791950044df0a4b61a98291a27a4cde3a8
+➡️         📁 b8/
+➡️             ↳ 📄 335fc7c1b86646004832d031ef199261a40e10
+➡️             ↳ 📄 a01695e5be9ab07735ecf56ce1fe6d67f064fe
+➡️         📁 b9/
+➡️             ↳ 📄 14882314cec178c6ecfb0335916afedb235c56
+➡️         📁 ba/
+➡️             ↳ 📄 b288c6e7d6d0c9b44a192ad06be3d8c7245805
+➡️             ↳ 📄 d3fd62a78b68afd242802d1754d8c33e9b35c3
+➡️         📁 bb/
+➡️             ↳ 📄 032a0131ec0b3a6336284667416e5939669a1f
+➡️             ↳ 📄 a0fd852e40211e3732c31a66eed3be38b1d039
+➡️             ↳ 📄 d1ec48cd47ce86ce79cbe60cbae3ea5c757f52
+➡️         📁 bc/
+➡️             ↳ 📄 0ba2d308983f6be49f2f0407bd55d6d9b0fb18
+➡️         📁 bd/
+➡️             ↳ 📄 7aa2803047cc3243a8b80c72f9fa81f0706958
+➡️             ↳ 📄 d992c29a8f44a64612a4b4fbf604d92bfd3979
+➡️             ↳ 📄 f88c07c26707750ad96fc55caea4c2f0671dec
+➡️         📁 be/
+➡️             ↳ 📄 47d1a3a345aaca78e01714d4626bc1ae1e67fc
+➡️         📁 bf/
+➡️             ↳ 📄 f653b82511a2e843a3ae72ff7551bcb6f15838
+➡️         📁 c0/
+➡️             ↳ 📄 e944641d4a041b290fb313d2fa2c812bc8ea68
+➡️         📁 c1/
+➡️             ↳ 📄 cbbafd6668823ef2c6f30c7b5a614a8d27c9c2
+➡️             ↳ 📄 f1eec369297ed8d6eadf789b331ed38413b3c0
+➡️         📁 c2/
+➡️             ↳ 📄 b5303a3fff793c6481661d8080cc295a80d447
+➡️         📁 c4/
+➡️             ↳ 📄 0203d2668dd0b6c3a6fcc9cb5a62244d5162c7
+➡️         📁 c5/
+➡️             ↳ 📄 37e5d496718812ba7110a4770f15377920c243
+➡️             ↳ 📄 5bf676687a93af703118b3aa57a7d3958a4238
+➡️         📁 c6/
+➡️             ↳ 📄 387dc798f0b800fc7edd38d7ba2d205e36b073
+➡️             ↳ 📄 8f4bb2d4b08d867a7e73fa1f1aa09f644b3cb3
+➡️         📁 c7/
+➡️             ↳ 📄 9de5257a636f0954ba831607c6faceaa248a5c
+➡️             ↳ 📄 a55bf61a71e4dad5b43bd0b4136c6b94001d53
+➡️         📁 c8/
+➡️             ↳ 📄 50f244b2732254de46670bd43720a73c7681fe
+➡️             ↳ 📄 bcb32c0f018d770766676405f967ade6bc1cf8
+➡️         📁 c9/
+➡️             ↳ 📄 bd8d5217a5bdb4552da1bcffc00adea79d78ad
+➡️         📁 ca/
+➡️             ↳ 📄 4f1c66b3e84e579b4bf3e3c66c40db5b9dbd4c
+➡️             ↳ 📄 8b3b85f6fa50dd2a5b7a0616b98863af395e84
+➡️         📁 cb/
+➡️             ↳ 📄 a7bb865c527b3d38b3986d862ea74284e050c8
+➡️         📁 cc/
+➡️             ↳ 📄 4b21e74f170dde01320c4847d4c0e6f130f46b
+➡️             ↳ 📄 dd599d5b363b2744751bf834cb48d5ce228418
+➡️         📁 cd/
+➡️             ↳ 📄 8f07951c762d3565b49996804f97f2108436dd
+➡️         📁 d0/
+➡️             ↳ 📄 55f4b454d00b49e7fb3ab4016cae6046022198
+➡️             ↳ 📄 dafe4e69705622034177533f1c82f4e1416d44
+➡️         📁 d1/
+➡️             ↳ 📄 783d8b43abcfbbbc1631331bf3670c28659d26
+➡️         📁 d2/
+➡️             ↳ 📄 363d7e15980817fbea55450d1fd97375c0d130
+➡️         📁 d3/
+➡️             ↳ 📄 1b57825cf8ac32adee965dbde38edfde832ab7
+➡️         📁 d5/
+➡️             ↳ 📄 b0c105526b670050f26f42388be0d4336335d4
+➡️             ↳ 📄 ec7bb41dbcd3a52c6851f11de18d89b51bd2b1
+➡️         📁 d7/
+➡️             ↳ 📄 114f96360bfb6573cabcfe402a67fb79507773
+➡️             ↳ 📄 8ab92c7819c62ef95d62432e7812ef00ffa537
+➡️         📁 d8/
+➡️             ↳ 📄 05c671b8705059c349f5faf462c32166a3c6bf
+➡️         📁 da/
+➡️             ↳ 📄 0fc821aee309eb8a93ac988136d93b52ccc0ac
+➡️             ↳ 📄 265e940c5dade6e93f0bd2ac8f5c79995e1e54
+➡️         📁 db/
+➡️             ↳ 📄 b25c3852692fe5a310369a840c8ba06f891196
+➡️             ↳ 📄 d8f2d7633cae3a5460653fa1e4b23b087fee65
+➡️         📁 dc/
+➡️             ↳ 📄 527502008261a8bd5e2576e5274d358e3efda6
+➡️         📁 dd/
+➡️             ↳ 📄 60730bc4c176fd260833d3451e9ac7224f94f8
+➡️         📁 de/
+➡️             ↳ 📄 f53eb47efdeb10ba7388a5c37e666473d351ce
+➡️         📁 df/
+➡️             ↳ 📄 3adb95f7d4b2d9373e186d1b8251c84df5368f
+➡️             ↳ 📄 84241880f38787a37d9706213912c677eee232
+➡️         📁 e3/
+➡️             ↳ 📄 e1bb4e7a1202c41403668542bac0adfd39d693
+➡️             ↳ 📄 f41f0d2d5c8dca5995c25806972d87e76fb6ec
+➡️         📁 e5/
+➡️             ↳ 📄 43cc80de6b702208062960136edadf81499865
+➡️         📁 e6/
+➡️             ↳ 📄 9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+➡️         📁 e7/
+➡️             ↳ 📄 58e31340999428233ceb235fbd0066fb202888
+➡️         📁 e8/
+➡️             ↳ 📄 e8da18c5947c78b83348ad55b4b5a3cda5fc4e
+➡️         📁 ea/
+➡️             ↳ 📄 474e3cf69a76637b686d7a2276bb214ae4db79
+➡️         📁 eb/
+➡️             ↳ 📄 bd55b65643ba6b5fb5abce0eeceacfd8eaa855
+➡️         📁 ec/
+➡️             ↳ 📄 f3a1a56eaf64f6135613212a69812217620f3c
+➡️             ↳ 📄 faec7e22da543380e369ead9092dc6a1aa1bea
+➡️         📁 ed/
+➡️             ↳ 📄 36e5d3c2f55d49468f991fb0fe2309e60173bd
+➡️             ↳ 📄 d51772c61d6145df83244065dc41d4ab350229
+➡️         📁 ee/
+➡️             ↳ 📄 aff663791686c864d2da0e871a8758a9b978e4
+➡️         📁 ef/
+➡️             ↳ 📄 35a1dd7349728f8453711701436568ac57e97f
+➡️         📁 f0/
+➡️             ↳ 📄 6e364558e8df71cc18aee6bef942eef9fa5096
+➡️         📁 f2/
+➡️             ↳ 📄 9b8eb73fedbc315517efe48e224e937094016d
+➡️         📁 f3/
+➡️             ↳ 📄 8aa734a5377da9356d3e526222c9418b888b0d
+➡️             ↳ 📄 bbc6e65b02885ca2f4538d19787215c5bce292
+➡️         📁 f4/
+➡️             ↳ 📄 1aa72ae86e27869555db4694eb95410b775410
+➡️             ↳ 📄 311fdadd56df438a37b75036b16d0e4585f96b
+➡️             ↳ 📄 5647833cba11273a86ab6e68ef44093bae335e
+➡️             ↳ 📄 a5f7474c55c38ced2f6daedfba5e1d5a52cc06
+➡️         📁 f5/
+➡️             ↳ 📄 3c04caa6c1737212135d58a8a24c6d21f86740
+➡️             ↳ 📄 c597e65b1aac4b28d53db3ee8ca92d8c368b84
+➡️         📁 f7/
+➡️             ↳ 📄 f77a9a515ca374b480d201119e682c92c6d6ad
+➡️         📁 f8/
+➡️             ↳ 📄 6c8dce49b677ee2cc2d9af365daa7753f3fa04
+➡️             ↳ 📄 ab7dd12cdf3e880060e55112557ca0b3676136
+➡️         📁 f9/
+➡️             ↳ 📄 688e21624f63e1d4d833c5d02546af302c6e6e
+➡️         📁 fa/
+➡️             ↳ 📄 20dca2517b7b230d4b236323e44001562a51a8
+➡️             ↳ 📄 b3c73d55cf9542e3adbcadb38c5a4f7a33280d
+➡️         📁 fb/
+➡️             ↳ 📄 4ac290332e862d9289c8638d9d7aece89e8971
+➡️         📁 fc/
+➡️             ↳ 📄 d7f574365380fa3b3c005e0616eaa1fea20f1d
+➡️         📁 ff/
+➡️             ↳ 📄 20270325642364307a16703da076ede1431374
+➡️         📁 info/
+➡️         📁 pack/
+➡️             ↳ 📄 pack-6f8fd3bf2807d6017b19c59f495ef8bc62081ccc.idx
+➡️             ↳ 📄 pack-6f8fd3bf2807d6017b19c59f495ef8bc62081ccc.pack
+➡️             ↳ 📄 pack-6f8fd3bf2807d6017b19c59f495ef8bc62081ccc.rev
+➡️     ↳ 📄 packed-refs
+➡️     📁 refs/
+➡️         📁 heads/
+➡️             ↳ 📄 main
+➡️         📁 remotes/
+➡️             📁 origin/
+➡️                 ↳ 📄 HEAD
+➡️                 ↳ 📄 main
+➡️         📁 tags/
+➡️ ↳ 📄 .nojekyll
+➡️ ↳ 📄 1.jpg
+➡️ ↳ 📄 10.jpeg
+➡️ ↳ 📄 2.png
+➡️ ↳ 📄 8.png
+➡️ ↳ 📄 9.jpeg
+➡️ ↳ 📄 CNAME
+➡️ 📁 Ci/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 styles.css
+➡️ 📁 Civ/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 1.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 styles.css
+➡️ 📁 Civ2/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 2.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 styles.css
+➡️ 📁 Civ3/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 3.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 styles.css
+➡️ 📁 Civ4/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 4.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 styles.css
+➡️ 📁 Civ5/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 5.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 styles.css
+➡️ 📁 SFM/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 11.jpeg
+➡️     ↳ 📄 2.png
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 mlolñ{.jpeg
+➡️     ↳ 📄 🌹.css
+➡️ 📁 SFYM/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 1.pdf
+➡️     ↳ 📄 11.jpeg
+➡️     ↳ 📄 2.png
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 🌹.css
+➡️ 📁 SFYM2/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 11.jpeg
+➡️     ↳ 📄 2.pdf
+➡️     ↳ 📄 2.png
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 🌹.css
+➡️ 📁 SFYM3/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 11.jpeg
+➡️     ↳ 📄 2.png
+➡️     ↳ 📄 3.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 🌹.css
+➡️ 📁 SFYM4/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 11.jpeg
+➡️     ↳ 📄 2.png
+➡️     ↳ 📄 4.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 🌹.css
+➡️ 📁 SFYM5/
+➡️     ↳ 📄 1.jpg
+➡️     ↳ 📄 11.jpeg
+➡️     ↳ 📄 2.png
+➡️     ↳ 📄 5.pdf
+➡️     ↳ 📄 app.js
+➡️     ↳ 📄 index.html
+➡️     ↳ 📄 🌹.css
+➡️ ↳ 📄 app.js
+➡️ 📁 data/
+➡️     📁 1/
+➡️         ↳ 📄 civil.html
+➡️         ↳ 📄 index (2).html
+➡️         ↳ 📄 original.html
+➡️         ↳ 📄 quien sabe.html
+➡️         ↳ 📄 styles.css
+➡️         ↳ 📄 🌹.CSS
+➡️     📁 2/
+➡️         ↳ 📄 README.md
+➡️         ↳ 📄 index.html
+➡️         ↳ 📄 minifooter BDH.html
+➡️         ↳ 📄 🌹.css
+➡️         ↳ 📄 🌹🏞.css
+➡️     📁 IMPRESO/
+➡️         ↳ 📄 1.jpg
+➡️         ↳ 📄 2.JPG
+➡️         ↳ 📄 3fa49988-3294-4fef-abf5-4789e3a29cdc.jpg
+➡️         ↳ 📄 INVI CIVIL.jpeg
+➡️         ↳ 📄 Nuevo documento de texto enriquecido.rtf
+➡️         ↳ 📄 UINVI.HTML
+➡️         ↳ 📄 inv.html
+➡️         ↳ 📄 qrcode_mya2026.galaxymanager.systems.png
+➡️         ↳ 📄 qrgalea.html
+➡️     📁 MINI/
+➡️         ↳ 📄 (a arreglar) index.html
+➡️         ↳ 📄 1.jpg
+➡️         ↳ 📄 2.png
+➡️         📁 4/
+➡️             ↳ 📄 🌹.css
+➡️         📁 5/
+➡️             ↳ 📄 🌹.css
+➡️         ↳ 📄 app.js
+➡️         ↳ 📄 body.js
+➡️         📁 d2/
+➡️             ↳ 📄 2.png
+➡️             ↳ 📄 index.html
+➡️             ↳ 📄 🌹.css
+➡️         📁 d3buena/
+➡️             ↳ 📄 index.html
+➡️             ↳ 📄 🌹.css
+➡️         📁 data/
+➡️             ↳ 📄 index.html
+➡️             ↳ 📄 🌹.css
+➡️         ↳ 📄 invitados.json
+➡️         ↳ 📄 minifooter BDH.html
+➡️         📁 perfecta/
+➡️             ↳ 📄 (a arreglar) index.html
+➡️             ↳ 📄 🌹.css
+➡️         📁 perfecta bien/
+➡️             ↳ 📄 (a arreglar) index.html
+➡️             ↳ 📄 🌹.css
+➡️         ↳ 📄 🌹.css
+➡️         ↳ 📄 🌹wcss
+➡️     📁 assets/
+➡️         ↳ 📄 1.jpg
+➡️         ↳ 📄 11.jpeg
+➡️         ↳ 📄 2.jpeg
+➡️         ↳ 📄 3.jpeg
+➡️         ↳ 📄 5.jpeg
+➡️         ↳ 📄 7.png
+➡️         ↳ 📄 Botanical_header_with_wedding_rings_202608131846.jpeg
+➡️         ↳ 📄 Full_moon_over_rolling_hills_202608131843.jpeg
+➡️         ↳ 📄 Gold_rings_watercolor_wedding_bo…_202608131846.jpeg
+➡️         ↳ 📄 Gold_wedding_rings_on_velvet_202608131843.jpeg
+➡️         ↳ 📄 Image_prompt_translation_202608132026.jpeg
+➡️         ↳ 📄 Ornate_golden_wedding_frame_design_202608131846.jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647(1).jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647.jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647_2(1).jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647_2.jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647_3(1).jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647_3.jpeg
+➡️         ↳ 📄 Wedding_invitation_for_Montserra…_202608091647_4.jpeg
+➡️         ↳ 📄 Wedding_invitation_for_October_2026_202608091631(1).jpeg
+➡️         ↳ 📄 Wedding_rings_and_floral_border_202608131845.jpeg
+➡️     📁 civil/
+➡️         ↳ 📄 LEEME.txt
+➡️         ↳ 📄 app.js
+➡️         ↳ 📄 app.py
+➡️         ↳ 📄 civil-mya2026.zip
+➡️         ↳ 📄 gemini-code-1786658373331.py
+➡️         ↳ 📄 invitados.json
+➡️         📁 static/
+➡️             ↳ 📄 1.jpg
+➡️             ↳ 📄 app.js
+➡️             ↳ 📄 gemini-code-1786661483791.html
+➡️             ↳ 📄 styles.css
+➡️         📁 templates/
+➡️             ↳ 📄 index.html
+➡️     📁 landing/
+➡️         📁 Nueva carpeta/
+➡️             ↳ 📄 antiguo diseño.html
+➡️             ↳ 📄 intento1 (2).html
+➡️             ↳ 📄 intento1.html
+➡️             ↳ 📄 🌹.css
+➡️         ↳ 📄 intento1.html
+➡️     📁 pases/
+➡️         ↳ 📄 11.jpeg
+➡️         ↳ 📄 2.png
+➡️         ↳ 📄 index.html
+➡️         ↳ 📄 pase (2).html
+➡️         ↳ 📄 pase -a imprimir.html
+➡️         ↳ 📄 pase.html
+➡️         ↳ 📄 🌹 - copia.css
+➡️         ↳ 📄 🌹.css
+➡️     📁 principal cn/
+➡️         ↳ 📄 1r.jpg
+➡️         ↳ 📄 2.html
+➡️         ↳ 📄 2.jpeg
+➡️         ↳ 📄 3.jpeg
+➡️         ↳ 📄 ANDY_LOCALHOST_PORTAL.vtha
+➡️         ↳ 📄 CNAME
+➡️         ↳ 📄 LEEME.txt
+➡️         ↳ 📄 PASE2.HTML
+➡️         ↳ 📄 README.md
+➡️         ↳ 📄 dark matter servers.py
+➡️         ↳ 📄 index - copia.html
+➡️         ↳ 📄 index.html
+➡️         ↳ 📄 original.html
+➡️         ↳ 📄 pase.html
+➡️         ↳ 📄 🌹 - copia.css
+➡️     📁 ps1fix/
+➡️         ↳ 📄 fix.ps1
+➡️     📁 scripts/
+➡️         ↳ 📄 app.js
+➡️         ↳ 📄 body.js
+➡️         ↳ 📄 invitados.json
+➡️ 📁 impresas/
+➡️     ↳ 📄 Lienzo_Finalinv1.png
+➡️     ↳ 📄 Lienzo_chilp.png
+➡️ ↳ 📄 index.html
+➡️ ↳ 📄 🌹.css
+➡️ ↳ 📄 🕷🕸ÁRBOL.py
+
+🕸 Generación completada con éxito. 👁‍🗨
