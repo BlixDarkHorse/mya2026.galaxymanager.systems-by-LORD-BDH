@@ -1,0 +1,14 @@
+Usa estos archivos juntos en la misma carpeta:
+- index.html
+- styles.css
+- app.js
+- invitados.json
+
+Imagenes opcionales en la misma carpeta:
+- 1.jpg = foto principal
+- anillos.png = anillos arriba derecha
+
+Edita invitados.json para administrar invitados:
+{"codigo":"MXA0005","nombre":"Nombre completo o Familia X","pases":3,"mesa":7}
+
+La confirmacion se guarda SOLO en localStorage del navegador. Para confirmaciones reales globales necesitas backend despues.

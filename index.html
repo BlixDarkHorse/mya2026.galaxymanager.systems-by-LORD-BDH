@@ -1,0 +1,428 @@
+<!TIPODOC SQR 🐍🕸️>
+<SQR lang="es">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2b020a" />
+    <meta name="description" content="Invitación oficial de boda de Montserrat y Alan. Octubre de 2026." />
+    <title>Montserrat & Alan | Universo BDH</title>
+    <link rel="stylesheet" href="🌹.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Great+Vibes&family=Pinyon+Script&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Montserrat & Alan | Invitación Oficial</title>
+</SQR>
+</🛸>
+
+</🌹></🐛🦇><body style="background-image: url('1.jpg'); background-size: cover;  background-attachment: fixed; background-position: center;">
+<style>
+    :root {
+        --gold: #c9a646;
+        --gold-soft: #f7dd9a;
+        --gold-deep: #8b6424;
+        --panel-dark: rgba(48, 12, 18, 0.97);
+        --bg-dark: rgba(67, 49, 49, 0.97);
+        --text: #fffdf7;
+        --shadow-gold: 0 0 25px rgba(201, 166, 70, 0.25);
+    }
+    
+    html, body { height: 100%; margin: 0; scroll-behavior: smooth; }
+    
+    body {
+        color: var(--text);
+        font-family: 'Cormorant Garamond', serif;
+        background-color: var(--bg-dark);
+        background-image: radial-gradient(circle at 50% 0%, #1a150b 0%, var(--bg-dark) 70%);
+    }
+
+    .app { position: relative; z-index: 2; display: flex; min-height: 100vh; justify-content: center; align-items: center; padding: 20px; }
+    .radio-tab { display: none; }
+
+    /* =========================================================
+       ÁREA PRINCIPAL Y CONTENEDOR (MOTOR FLEX DE LIBRO)
+       ========================================================= */
+    .main {
+        flex: 1; display: flex; flex-direction: column; align-items: center;
+        width: 100%; max-width: 900px;
+    }
+    
+    .content-wrapper {
+        width: 100%;
+        background: var(--panel-dark); 
+        border-radius: 20px;
+        border: 1px solid var(--gold);
+        box-shadow: var(--shadow-gold); 
+        position: relative;
+        display: flex;               /* MODO LADO A LADO */
+        flex-direction: row;
+        padding: 0;                  
+        overflow: hidden;            /* Contiene las esquinas del menú lateral */
+    }
+
+    /* =========================================================
+       SIDEBAR / NAVEGACIÓN LATERAL (COLAPSABLE IDÉNTICO EN MÓVIL)
+       ========================================================= */
+    .sidebar {
+        width: 0;                    /* INICIA CERRADO */
+        flex-shrink: 0;
+        background: rgba(81, 32, 32, 0.98);
+        border-right: none;
+        display: flex; flex-direction: column; align-items: center;
+        padding: 0;                  
+        gap: 10px;
+        overflow: hidden;
+        white-space: nowrap;         
+        transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    /* GATILLO DE EXPANSIÓN LATERAL (Funciona igual en PC y Celular) */
+    #menu-toggle:checked ~ .app .main .content-wrapper .sidebar {
+        width: 260px;                /* TAMAÑO DESPLEGADO */
+        padding: 40px 0;
+        border-right: 1px solid var(--gold-deep);
+        box-shadow: 5px 0 20px rgba(75, 70, 70, 0.8);
+    }
+
+    .brand {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5rem;
+        color: var(--gold-soft);
+        text-shadow: 0 0 15px rgba(201, 166, 70, 0.4);
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 0.9;
+    }
+
+    .navlist { list-style: none; padding: 0; margin: 0; width: 100%; }
+    
+    .nav-label {
+        display: block; color: #888; text-decoration: none;
+        padding: 16px 24px; font-size: 1.1em; font-weight: 700;
+        font-family: 'Cinzel', serif; letter-spacing: 0.1em;
+        transition: all .3s ease;
+        border-left: 3px solid transparent;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    .nav-label:hover { color: var(--gold-soft); background: rgba(255,255,255,0.03); }
+
+    /* =========================================================
+       ZONA DE SLIDES Y PROTECCIÓN DEL CONTENIDO
+       ========================================================= */
+    .slides-wrapper {
+        flex: 1;
+        padding: 40px;          
+        width: 100%;
+        position: relative;
+    }
+
+    /* Botón visual para abrir/cerrar menú lateral */
+    .btn-menu {
+        display: inline-block;
+        background: transparent;
+        color: var(--gold-soft);
+        border: 1px solid var(--gold);
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+        margin-bottom: 20px;
+        transition: 0.3s;
+    }
+    .btn-menu:hover { background: rgba(201, 166, 70, 0.15); }
+
+    .slide { display: none; animation: fade .45s ease; text-align: center; }
+    @keyframes fade { from { opacity: 0; transform: translateY(10px) } to { opacity: 1; transform: none } }
+
+    /* LÓGICA DE CONTROL CSS BARE METAL (Rutas Actualizadas) */
+    #t1:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s1,
+    #t2:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s2,
+    #t3:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s3,
+    #t4:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s4,
+    #t5:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s5,
+    #t6:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s6,
+    #t7:checked ~ .app .main .content-wrapper .slides-wrapper .slides #s7
+    { display: block; }
+
+    #t1:checked ~ .app .sidebar label[for="t1"],
+    #t2:checked ~ .app .sidebar label[for="t2"],
+    #t3:checked ~ .app .sidebar label[for="t3"],
+    #t4:checked ~ .app .sidebar label[for="t4"],
+    #t5:checked ~ .app .sidebar label[for="t5"] {
+        border-left: 3px solid var(--gold);
+        color: var(--gold);
+        background: linear-gradient(90deg, rgba(201,166,70,0.15) 0%, transparent 100%);
+    }
+
+    /* =========================================================
+       ESTILOS INTERNOS
+       ========================================================= */
+    .photo-stage {
+        width: 100%; height: 350px; border-radius: 12px;
+        background: url('1.jpg') center/cover no-repeat;
+        border: 1px solid rgba(201,166,70,0.5);
+        margin-bottom: 30px;
+    }
+
+    h2 { font-family: 'Great Vibes', cursive; font-size: 3.5rem; color: var(--gold-soft); margin: 0 0 10px; font-weight: 400; }
+    h3 { font-family: 'Cinzel', serif; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 15px; }
+    p { font-size: 1.2rem; line-height: 1.6; color: #ddd; }
+
+    .map-box {
+        width: 100%; height: 300px; border-radius: 12px; overflow: hidden;
+        border: 1px solid var(--gold); margin: 20px 0;
+    }
+    .map-box iframe { width: 100%; height: 100%; border: none; }
+
+    /* =========================================================
+       BOTONES INVISIBLES DE PAGINACIÓN (PEGADOS A LA DERECHA)
+       ========================================================= */
+    .nav-actions {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        gap: 20px;
+        margin-top: 40px;
+        border-top: 1px solid rgba(201, 166, 70, 0.3);
+        padding-top: 20px;
+    }
+
+    .btn-ghost-nav {
+        background: transparent;
+        color: var(--gold-soft);
+        border: none;
+        cursor: pointer;
+        font-family: 'Cinzel', serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transition: 0.3s;
+    }
+    .btn-ghost-nav:hover { color: var(--gold); text-shadow: 0 0 10px rgba(201, 166, 70, 0.6); }
+
+    /* =========================================================
+       FOOTER BDH INYECTADO
+       ========================================================= */
+    .footer-bdh {
+        text-align: center; background-color: transparent;
+        width: 100%; padding: 20px; border-top: 1px solid var(--gold-deep);
+        font-family: 'Cinzel', serif; color: var(--gold); margin-top: 30px;
+    }
+    .footer-bdh p { margin: 8px 0; font-size: 1.05em; color: var(--gold-soft); }
+
+    /* AJUSTES RESPONSIVOS FINOS (Mantiene el menú lateral en móviles) */
+    @media (max-width: 600px) {
+        .app { padding: 10px; }
+        .slides-wrapper { padding: 20px 15px; }
+        h2 { font-size: 2.8rem; }
+    }
+
+    /* =========================================================
+       MODIFICACIONES ADICIONALES PARA MÓVILES
+       ========================================================= */
+    @media (max-width: 600px) {
+    #menu-toggle:checked ~ .app .main .content-wrapper .sidebar {
+        width: 180px; /* Reduce el ancho de la barra en dispositivos móviles */
+        padding: 20px 0;
+    }
+    .sidebar .brand {
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+    }
+    .sidebar .nav-label {
+        padding: 12px 14px;
+        font-size: 0.85em;
+        letter-spacing: 0.05em;
+    }
+}
+</style>
+
+<body>
+
+  <!-- MOTORES LÓGICOS CSS (Ocultos en la raíz) -->
+  <input type="radio" name="tabs" id="t1" class="radio-tab" checked>
+  <input type="radio" name="tabs" id="t2" class="radio-tab">
+  <input type="radio" name="tabs" id="t3" class="radio-tab">
+  <input type="radio" name="tabs" id="t4" class="radio-tab">
+  <input type="radio" name="tabs" id="t5" class="radio-tab">
+  <input type="radio" name="tabs" id="t6" class="radio-tab">
+  <input type="radio" name="tabs" id="t7" class="radio-tab">
+  
+  <!-- MOTOR DEL MENÚ COLAPSABLE -->
+  <input type="checkbox" id="menu-toggle" class="radio-tab">
+
+  <div class="app">
+      
+      <!-- ÁREA CENTRAL DE VISUALIZACIÓN -->
+      <main class="main">
+        
+      <div class="content-wrapper">
+            <!-- NAVEGACIÓN VERTICAL LATERAL (Despliegue lateral unificado) -->
+            <nav class="sidebar" role="navigation">
+                <div class="brand">M & A</div>
+                <div class="navlist">
+                    <label for="t1" class="nav-label">1. Inicio</label>
+                    <label for="t2" class="nav-label">2. Programa</label>
+                    <label for="t3" class="nav-label">3. Unión Civil</label>
+                    <label for="t4" class="nav-label">4. Ceremonia</label>
+                    <label for="t5" class="nav-label">5. Recepción</label>
+                </div>
+            </nav>
+ 
+            <!-- WRAPPER DE PROTECCIÓN DE SLIDES -->
+            <div class="slides-wrapper">
+                
+                <!-- GATILLO DEL MENÚ -->
+                <label for="menu-toggle" class="btn-menu">☰ MENÚ</label>
+
+                <div class="slides">
+
+                    <!-- PÁGINA 1: FOTO E INICIO -->
+                    <div class="slide" id="s1">
+                        <div class="photo-stage"></div>
+                        <h2>Montserrat & Alan</h2>
+                        <p style="font-family: 'Cinzel', serif; color: var(--gold); letter-spacing: 0.15em;">Nuestra Boda Oficial</p>
+                        <p>Con gran alegría, te invitamos a celebrar el inicio de nuestra vida juntos. Descubre todos los detalles navegando por esta invitación.</p>
+                        
+                        <div class="nav-actions">
+                            <label for="t2" class="btn-ghost-nav">Pag. Sig. ➔</label>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 2: PROGRAMA GENERAL -->
+                    <div class="slide" id="s2">
+                        <h3>Programa General</h3>
+                        <h2>Itinerario</h2>
+                        <div style="border: 1px solid var(--gold-deep); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+                            <h4 style="color: var(--gold-soft); margin: 0 0 5px; font-family: 'Cinzel', serif;">17 de Octubre, 2026</h4>
+                            <p style="margin: 0;">Unión Civil en Zoyatepec, Gro.</p>
+                        </div>
+                        <div style="border: 1px solid var(--gold-deep); border-radius: 12px; padding: 20px; margin-bottom: 15px;">
+                            <h4 style="color: var(--gold-soft); margin: 0 0 5px; font-family: 'Cinzel', serif;">24 de Octubre, 2026 · 4:30 p.m.</h4>
+                            <p style="margin: 0;">Ceremonia Religiosa, Chilpancingo.</p>
+                        </div>
+                        <div style="border: 1px solid var(--gold-deep); border-radius: 12px; padding: 20px;">
+                            <h4 style="color: var(--gold-soft); margin: 0 0 5px; font-family: 'Cinzel', serif;">24 de Octubre, 2026 · 7:00 p.m.</h4>
+                            <p style="margin: 0;">Recepción Principal en Salón Marina.</p>
+                        </div>
+
+                        <div class="nav-actions">
+                            <label for="t1" class="btn-ghost-nav">⬅ Reg.</label>
+                            <label for="t3" class="btn-ghost-nav">Pag. Sig. ➔</label>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 3: CIVIL -->
+                    <div class="slide" id="s3">
+                        <h3>Unión Civil</h3>
+                        <h2>Zoyatepec</h2>
+                        <p><strong>Sábado 17 de Octubre, 2026</strong><br>Calle del Encanto, Zoyatepec, Guerrero.</p>
+                        <div class="map-box">
+                            <iframe loading="lazy" src="https://www.google.com/maps?q=Zoyatepec%2C+Guerrero%2C+Mexico&output=embed"></iframe>
+                        </div>
+                        
+                        <div class="nav-actions">
+                            <label for="t2" class="btn-ghost-nav">⬅ Reg.</label>
+                            <label for="t4" class="btn-ghost-nav">Pag. Sig. ➔</label>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 4: IGLESIA -->
+                    <div class="slide" id="s4">
+                        <h3>Ceremonia Religiosa</h3>
+                        <h2>Iglesia San Francisco</h2>
+                        <p><strong>Sábado 24 de Octubre, 2026 · 4:30 p. m.</strong><br>Chilpancingo de los Bravo, Gro.</p>
+                        <div class="map-box">
+                            <iframe loading="lazy" src="https://www.google.com/maps?q=Iglesia%20de%20San%20Francisco%2C%20Chilpancingo%20de%20los%20Bravo%2C%20Guerrero%2C+Mexico&output=embed"></iframe>
+                        </div>
+                        
+                        <div class="nav-actions">
+                            <label for="t3" class="btn-ghost-nav">⬅ Reg.</label>
+                            <label for="t5" class="btn-ghost-nav">Pag. Sig. ➔</label>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 5: MARINA -->
+                    <div class="slide" id="s5">
+                        <h3>Recepción</h3>
+                        <h2>Salón Marina</h2>
+                        <p><strong>Sábado 24 de Octubre, 2026 · 7:00 p. m.</strong><br>Calle Mariscal Galeana, Col. Galeana, Chilpancingo, Gro.</p>
+                        <div class="map-box">
+                            <iframe loading="lazy" src="https://www.google.com/maps?q=Mariscal%20Galeana%2029%2C%20Galeana%2C+39010%20Chilpancingo%20de%20los%20Bravo%2C%20Guerrero%2C+Mexico&output=embed"></iframe>
+                        </div>
+                        
+                        <div class="nav-actions">
+                            <label for="t4" class="btn-ghost-nav">⬅ Reg.</label>
+                            <label for="t6" class="btn-ghost-nav">Pag. Sig. ➔</label>
+                        </div>
+                    </div>
+
+                    <!-- PÁGINA 6: NUESTRAS FAMILIAS -->
+                    <div class="slide" id="s6">
+                        <h3>Con la bendición de nuestras familias</h3>
+                        <h2>Los Esperamos</h2>
+                        <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 30px 0; border-top: 1px solid var(--gold-deep); border-bottom: 1px solid var(--gold-deep); padding: 20px 0;">
+                            <div style="margin: 10px;">
+                                <h4 style="color: var(--gold-soft); margin-bottom: 5px; font-family:'Cinzel', serif;">Padres de la novia</h4>
+                                <p style="margin: 0; font-size: 1rem;">Marisol Mejía Martínez<br>José Manuel Ávila Olivar</p>
+                            </div>
+                            <div style="margin: 10px;">
+                                <h4 style="color: var(--gold-soft); margin-bottom: 5px; font-family:'Cinzel', serif;">Padres del novio</h4>
+                                <p style="margin: 0; font-size: 1rem;">María Hernández Santos<br><span style="color: #666;">Juan Carlos Díaz Tecuapa ✞</span></p>
+                            </div> 
+                        </div> 
+                        
+                        <div class="nav-actions">
+                            <label for="t5" class="btn-ghost-nav">⬅ Reg.</label>
+                            <label for="t7" class="btn-ghost-nav">PAG. 7 ➔</label>
+                        </div>
+                    </div> 
+
+    <!-- PÁGINA 7: EXTRA Y FINAL -->
+    <div class="slide" id="s7">
+    <div style="background: rgba(0,0,0,0.5); border: 1px dashed var(--gold); padding: 25px; border-radius: 12px; margin-bottom: 20px; box-shadow: inset 0 0 15px rgba(201,166,70,0.1);">
+        <h3 style="font-family: 'Cinzel', serif; font-size: 1.2rem; color: var(--gold-soft); letter-spacing: 0.2em; margin-bottom: 12px; text-transform: uppercase;">¡TE ESPERAMOS!</h3>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: #f2ebd9; line-height: 1.5; margin: 0 0 20px; font-style: italic;">Visita este menú compartiéndolo con el enlace oficial o escaneando el código QR proporcionado en tu pase físico.
+        </p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://mya2026.galaxymanager.systems&color=c9a646&bgcolor=29020a" alt="QR" style="border: 2px solid var(--gold); border-radius: 8px;">
+    </div>
+    
+    <p style="font-size: 3.5rem; font-family: 'Great Vibes', cursive; color: var(--gold-soft); margin: 15px 0; text-shadow: 0 0 10px rgba(201,166,70,0.4);">Fin 😊</p>
+                        
+                        <footer class="footer-bdh" role="contentinfo">
+                        <div style="text-align: right; margin-top: 15px; font-family: 'Cinzel', serif; font-size: 0.65rem; color: rgba(123, 117, 106, 0.7); letter-spacing: 0.08em;">
+                            ALL RIGHTS RESERVEDS © 2026 UNIVERSO BDH <span class="bdh-emoji-opaco">🖤🔥🚀</span>
+                        </div></footer> 
+                        <div class="nav-actions">
+                            <label for="t6" class="btn-ghost-nav">⬅ Reg.</label>
+                            <label for="t1" class="btn-ghost-nav">Inicio ➔</label>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+      </div>
+<!-- =====================================================
+     FIRMA INFERIOR BDH
+     ===================================================== -->
+  <div class="bdh-footer-bottom">
+    <div class="footer-copy">
+      © 2026
+      <span class="bdh-emoji-opaco">🪐</span>
+      <div class="bdh-signature-wrapper">
+        <span class="bdh-trigger">LORD BDH</span>
+        <div class="bdh-bubble">
+          <span class="bdh-emoji-opaco">🕷🕸</span>
+          UNIVERSO BDH / BDH CORPS
+          <br>
+          ¡HOY CONSTRUIMOS EL IMPERIO!
+          <br>
+          <span class="bdh-emoji-opaco">🧙‍♂️💜</span>
+    </main>
+  </div>
+    <script src="app.js"></script>
+</body>
+</🛸>
+</🐍🕸️🖤🔥🚀>

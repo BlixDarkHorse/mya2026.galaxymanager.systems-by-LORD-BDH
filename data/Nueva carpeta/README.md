@@ -1,1 +1,0 @@
-# GALAXYMANAGER.github.io
